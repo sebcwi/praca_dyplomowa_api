@@ -1,0 +1,196 @@
+{
+    "swagger": "2.0",
+    "info": 
+    {
+      "title": "Praca Dyplomowa API",
+      "description": "Moja api do pracy dyplomowej o FFXIV",
+      "version": "1.0.0",
+      "contact": 
+      {
+          "name":"Sebastian Ćwirko nr albumu: 39564"
+      }
+    },
+    "paths":{
+      "/user/info":{
+        "get":{
+          "description": "Get user info by name",
+          "tags": ["User"],
+          "parameters":[
+            {
+              "name": "username",
+             "in": "query",
+             "description": "username",
+             "required": true,
+             "schema":
+              {
+                "type": "string"
+              }
+            }
+          ],
+          "responses":
+          {
+            "200":{
+              "description": "Success"
+            },
+            "404":{
+            "description": "User not found"
+            }
+          }
+        }
+      },
+      "/data/servers":{
+        "get":{
+          "description":"Get all servers",
+          "tags":["Data"],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/data/datacenters":{
+        "get":{
+          "description":"Get all datacenterr",
+          "tags":["Data"],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/data/{name}/page/{id}":{
+        "get":{
+          "description":"List content by name in ID page",
+          "tags":["Data"],
+          "parameters":[
+              {
+                "name":"name",
+                "in":"path",
+                "desciption":"Content Name",
+                "required":true,
+                "schema":{
+                  "type":"string"
+                }
+              },
+              {
+                "name":"id",
+                "in":"path",
+                "desciption":"ID Page",
+                "required":true,
+                "schema":{
+                  "type":"integer"
+                }
+              }
+          ],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/data/{name}/{id}":{
+        "get":{
+          "description":"List content by name nad ID",
+          "tags":["Data"],
+          "parameters":
+          [
+            {
+              "name":"name",
+              "in":"path",
+              "description":"Content Name",
+              "required":true,
+              "schema":{
+                "type":"string"
+              }
+            },
+            {
+              "name":"id",
+              "in":"path",
+              "description":"ID",
+              "required":true,
+              "schema":{
+                "type":"integer"
+              }
+            }
+          ],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/data/content":{
+        "get":{
+          "description":"Get all content",
+          "tags":["Data"],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/user/register":{
+        "post":{
+          "description":"Register user info",
+          "tags":["User"],
+          "parameters":[{
+            "in":"body",
+            "name":"body",
+            "description":"Register user",
+            "required":true,
+            "schema":{
+              "$ref":"#/definitions/User"
+            }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      }
+    },
+    "definitions":{
+      "User":{
+        "type":"object",
+        "properties":{
+          "username":{
+            "type":"string"
+          },
+          "password":{
+            "type":"string"
+          },
+          "email":{
+            "type":"string"
+          }
+        }
+      }
+    },
+    "externalDocs": {
+      "description": "Find out more about Swagger",
+      "url": "http://swagger.io"
+    }
+}

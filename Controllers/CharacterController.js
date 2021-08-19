@@ -1,12 +1,14 @@
-const CharacterController = {
+const XIVAPI = require('@xivapi/js')
+xiv = new XIVAPI()
 
-    byID(req,res){
-        res.send('byID')
-    },
 
-    byName(req,res){
-        res.send('byName')
-    }
+const getByID = (req,res) => {
+    xiv.character.get(req.params.id).then((result) => {
+        
+        res.send(result)
+    }).catch(err=>{res.send({msg:err})})
 }
 
-module.exports = CharacterController
+module.exports = {
+    getByID
+}
