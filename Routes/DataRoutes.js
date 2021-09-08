@@ -8,12 +8,12 @@ xiv = new XIVAPI()
 
 router.get('/content',dataController.getContent)
 
-router.get('/:name/:id',dataController.getContentByID)
-
-router.get('/:name/page/:id',dataController.listByName)
+// router.get('/:name/page/:id',dataController.listByName)
 
 router.get('/servers',dataController.getServers)
 
 router.get('/datacenters',dataController.getDataCenters)
+
+
 
 module.exports = router

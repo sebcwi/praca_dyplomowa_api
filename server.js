@@ -10,16 +10,23 @@ const swaggerUi = require('swagger-ui-express')
 const charRoutes = require('./Routes/CharacterRoutes')
 const dataRoutes = require('./Routes/DataRoutes')
 const userRoutes = require('./Routes/UserRoutes')
+const classesRoutes = require('./Routes/ClassesRoutes')
+const dungeonRoutes = require('./Routes/DungeonRoutes')
+const tutorialRouter = require('./Routes/TutorialRoutes')
+
 const mongDB = require('./DB/mongoose')
 const swagerOption = require('./swagger/swagger.json')
 
 
 app.use('/api-docs',swaggerUi.serve,swaggerUi.setup(swagerOption))
 app.use(express.json())
-app.use(cors())
+app.use(cors({origin: true, credentials: true}))
 
 app.use('/character',charRoutes)
 app.use('/data',dataRoutes)
+app.use('/classes',classesRoutes)
+app.use('/dungeons',dungeonRoutes)
+app.use('/tutorial',tutorialRouter)
 app.use('/user',userRoutes)
 
 

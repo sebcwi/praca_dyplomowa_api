@@ -33,7 +33,7 @@
               "description": "Success"
             },
             "404":{
-            "description": "User not found"
+            "description": "not found"
             }
           }
         }
@@ -171,6 +171,291 @@
             }
           }
         }
+      },
+      "/user/changePassword":{
+        "put":{
+          "description":"Change password",
+          "tags":["User"],
+          "parameters":[
+            {
+              "in":"query",
+              "name":"id",
+              "description":"User ID",
+              "required": true,
+              "schema":{
+                 "type": "string"
+               }
+            },
+            {
+              "in":"body",
+              "name":"body",
+              "description":"New password",
+              "required":true,
+              "schema":{
+                "$ref":"#/definitions/User"
+              }
+            }
+          ],
+          "responses":
+          {
+            "200":{
+              "description": "Success"
+            },
+            "404":{
+            "description": "not found"
+            }
+          }
+        }
+      },
+      "/user/changeName":{
+        "put":{
+          "description":"Change Name",
+          "tags":["User"],
+          "parameters":[
+            {
+              "in":"query",
+              "name":"id",
+              "description":"User ID",
+              "required": true,
+              "schema":{
+                 "type": "string"
+               }
+            },
+            {
+              "in":"body",
+              "name":"body",
+              "description":"New name",
+              "required":true,
+              "schema":{
+                "$ref":"#/definitions/User"
+              }
+            }
+          ],
+          "responses":
+          {
+            "200":{
+              "description": "Success"
+            },
+            "404":{
+            "description": "not found"
+            }
+          }
+        }
+      },
+      "/user/login":{
+        "post":{
+          "description":"Change password",
+          "tags":["User"],
+          "parameters":[{
+                "in":"body",
+                "name":"body",
+                "description":"UserBody",
+                "required":true,
+                "schema":{
+                  "$ref":"#/definitions/UserLogin"
+                }
+              }
+            ],
+          "responses":
+          {
+            "200":{
+              "description": "Success"
+            },
+            "404":{
+            "description": "not found"
+            }
+          }
+        }        
+      },
+      "/classes/byPart":{
+        "get":{
+          "description":"Get all classes",
+          "tags":["Class"],
+          "parameters":[{
+            "in":"query",
+            "name":"part",
+            "description": "Part",
+             "required": true,
+             "schema":
+              {
+                "type": "string"
+              }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/classes/byName":{
+        "get":{
+          "description":"Get classes by name",
+          "tags":["Class"],
+          "parameters":[{
+            "in":"query",
+            "name":"name",
+            "description": "Name",
+             "required": true,
+             "schema":
+              {
+                "type": "string"
+              }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/classes/skills":{
+        "get":{
+          "description":"Get classs skill by name",
+          "tags":["Class"],
+          "parameters":[{
+            "in":"query",
+            "name":"name",
+            "description": "Name",
+             "required": true,
+             "schema":
+              {
+                "type": "string"
+              }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/classes/skill":{
+        "post":{
+          "description":"Get classs skill by name",
+          "tags":["Class"],
+          "parameters":[{
+            "in":"body",
+            "name":"body",
+            "description": "Register skill",
+             "required": true,
+             "schema":{
+              "$ref":"#/definitions/Skill"
+            }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/tutorial/all":{
+        "get":{
+          "description":"Get all class tutorials by name",
+          "tags":["Tutorial"],
+          "parameters":[{
+            "in":"query",
+            "name":"name",
+            "description": "Name",
+             "required": true,
+             "schema":
+              {
+                "type": "string"
+              }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/tutorial/{id}":{
+        "get":{
+          "description":"Get all class tutorials by ID",
+          "tags":["Tutorial"],
+          "parameters":[{
+            "in":"path",
+            "name":"id",
+            "description": "ID",
+             "required": true,
+             "schema":
+              {
+                "type": "string"
+              }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/dungeons/page/{id}":{
+        "get":{
+          "description":"Get all class tutorials by name",
+          "tags":["Dungeons"],
+          "parameters":[{
+            "in":"path",
+            "name":"id",
+            "description": "ID",
+             "required": true,
+             "schema":
+              {
+                "type": "string"
+              }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/dungeons/post":{
+        "post":{
+          "description":"Register user info",
+          "tags":["Dungeons"],
+          "parameters":[{
+            "in":"body",
+            "name":"body",
+            "description":"Register dungeons",
+            "required":true,
+            "schema":{
+              "$ref":"#/definitions/Dungeon"
+            }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
       }
     },
     "definitions":{
@@ -185,6 +470,90 @@
           },
           "email":{
             "type":"string"
+          },
+          "lodestoneID":{
+            "type":"integer"
+          }
+        }
+      },
+      "UserLogin":{
+        "type":"object",
+        "properties":{
+          "email":{
+            "type":"string",
+            "required":true
+          },
+          "password":{
+            "type":"string",
+            "required":true
+          }
+        }
+      },
+      "Dungeon":{
+        "type":"object",
+        "properties":{
+          "Name":{
+            "type":"string",
+            "required":true
+          },
+          "Level":{
+            "type":"number",
+            "required":true
+          },
+          "Description":{
+            "type":"string",
+            "required":true
+          },
+          "Banner":{
+            "type":"string",
+            "required":true
+          },
+          "Icon":{
+            "type":"string",
+            "required":true
+          },
+          "DPS":{
+            "type":"number",
+            "required":true
+          }
+          ,
+          "Healers":{
+            "type":"number",
+            "required":true
+          }
+          ,
+          "Tanks":{
+            "type":"number",
+            "required":true
+          }
+        }
+      },
+      "Skill":{
+        "type":"object",
+        "properties":{
+          "idSkill":{
+            "type":"number",
+            "required":true
+          },
+          "Class":{
+            "type":"string",
+            "required":true
+          },
+          "Level":{
+            "type":"number",
+            "required":true
+          },
+          "Name":{
+            "type":"string",
+            "required":true
+          },
+          "Description":{
+            "type":"string",
+            "required":true
+          },
+          "imgURL":{
+            "type":"string",
+            "required":true
           }
         }
       }

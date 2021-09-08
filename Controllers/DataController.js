@@ -1,4 +1,5 @@
 const XIVAPI = require('@xivapi/js')
+
 xiv = new XIVAPI()
 
 const getServers = (req,res) => {
@@ -20,13 +21,6 @@ const listByName = (req,res) => {
     }).catch(err=>{res.send(err)})
 }
 
-const getContentByID = (req,res) => {
-    xiv.data.list(req.params.name,{ids:req.params.id}).then((result) => {
-        res.send(result)
-    }).catch(err=>{res.send(err)})
-}
-
-
 const getContent = (req,res) => {
     xiv.data.content().then((result) => {
         res.send(result)
@@ -34,8 +28,6 @@ const getContent = (req,res) => {
 }
 
 
-
-
 module.exports = {
-    getServers,getDataCenters,listByName,getContentByID,getContent
+    getServers,getDataCenters,listByName,getContent
 }
