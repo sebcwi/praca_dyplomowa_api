@@ -3,6 +3,6 @@ const router = express.Router()
 const dunegonController = require('../Controllers/DungeonController')
 
 router.get('/page/:id',dunegonController.getDungeons)
-router.post('/post',dunegonController.postDungeons)
+router.post('/',dunegonController.postDungeons)
 
 module.exports = router

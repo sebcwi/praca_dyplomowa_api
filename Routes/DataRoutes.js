@@ -15,5 +15,4 @@ router.get('/servers',dataController.getServers)
 router.get('/datacenters',dataController.getDataCenters)
 
 
-
 module.exports = router

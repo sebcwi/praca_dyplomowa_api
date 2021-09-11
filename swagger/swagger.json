@@ -362,7 +362,7 @@
           }
         }
       },
-      "/tutorial/all":{
+      "/tutorial":{
         "get":{
           "description":"Get all class tutorials by name",
           "tags":["Tutorial"],
@@ -434,7 +434,7 @@
           }
         }
       },
-      "/dungeons/post":{
+      "/dungeons":{
         "post":{
           "description":"Register user info",
           "tags":["Dungeons"],
@@ -446,6 +446,79 @@
             "schema":{
               "$ref":"#/definitions/Dungeon"
             }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/dlc":{
+        "get":{
+          "description":"Get all info about extansion",
+          "tags":["DLC"],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/history":{
+        "get":{
+          "description":"Get all info about patch",
+          "tags":["History"],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        },
+        "post":{
+          "description":"Get all info about patch",
+          "tags":["History"],
+          "parameters":[{
+            "in":"body",
+            "name":"body",
+            "description":"Register dungeons",
+            "required":true,
+            "schema":{
+              "$ref":"#/definitions/HistoryPatch"
+            }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/history/{name}":{
+        "get":{
+          "description":"Get all info about patch",
+          "tags":["History"],
+          "parameters":[{
+            "in":"path",
+            "name":"name",
+            "description": "name",
+             "required": true,
+             "schema":
+              {
+                "type": "string"
+              }
           }],
           "responses":{
             "200":{
@@ -552,6 +625,48 @@
             "required":true
           },
           "imgURL":{
+            "type":"string",
+            "required":true
+          }
+        }
+      },
+      "DLC":{
+        "type":"object",
+        "properties":{
+          "Notes":{
+            "type":"string",
+            "required":true
+          },
+          "Patch":{
+            "type":"string",
+            "required":true
+          },
+          "RealeaseDate":{
+            "type":"string",
+            "required":true
+          },
+          "Title":{
+            "type":"string",
+            "required":true
+          }
+        }
+      },
+      "HistoryPatch":{
+        "type":"object",
+        "properties":{
+          "Patch":{
+            "type":"string",
+            "required":true
+          },
+          "Title":{
+            "type":"string",
+            "required":true
+          },
+          "Text":{
+            "type":"string",
+            "required":true
+          },
+          "Source":{
             "type":"string",
             "required":true
           }
