@@ -384,22 +384,68 @@
               "description":"Not Found"
             }
           }
+        },
+        "post":{
+          "description":"Post new Tutorial",
+          "tags":["Tutorial"],
+          "parameters":[{
+            "in":"body",
+            "name":"body",
+            "description":"Tutorial",
+            "required":true,
+            "schema":{
+              "$ref":"#/definitions/Tutorial"
+            }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/tutorial/all":{
+        "get":{
+          "description":"Get all class tutorials",
+          "tags":["Tutorial"],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
         }
       },
       "/tutorial/{id}":{
         "get":{
           "description":"Get all class tutorials by ID",
           "tags":["Tutorial"],
-          "parameters":[{
-            "in":"path",
-            "name":"id",
-            "description": "ID",
-             "required": true,
-             "schema":
-              {
-                "type": "string"
-              }
-          }],
+          "parameters":[
+            {
+              "in":"path",
+              "name":"id",
+              "description": "ID",
+              "required": true,
+              "schema":
+                {
+                  "type": "string"
+                }
+            },{
+              "in":"query",
+              "name":"class",
+              "description": "Class",
+               "required": true,
+               "schema":
+                {
+                  "type": "string"
+                }
+            }
+        ],
           "responses":{
             "200":{
               "description":"Success"
@@ -457,10 +503,43 @@
           }
         }
       },
-      "/dlc":{
+      "/dlc/page/{id}":{
         "get":{
           "description":"Get all info about extansion",
           "tags":["DLC"],
+          "parameters":[{
+            "in":"path",
+            "name":"id",
+            "description": "ID",
+             "required": true,
+             "schema":
+              {
+                "type": "string"
+              }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/dlc":{
+        "post":{
+          "description":"Register DLC info",
+          "tags":["DLC"],
+          "parameters":[{
+            "in":"body",
+            "name":"body",
+            "description":"Register dungeons",
+            "required":true,
+            "schema":{
+              "$ref":"#/definitions/DLC"
+            }
+          }],
           "responses":{
             "200":{
               "description":"Success"
@@ -475,6 +554,16 @@
         "get":{
           "description":"Get all info about patch",
           "tags":["History"],
+          "parameters":[{
+            "in":"query",
+            "name":"extansion",
+            "description": "extansion",
+             "required": true,
+             "schema":
+              {
+                "type": "string"
+              }
+          }],
           "responses":{
             "200":{
               "description":"Success"
@@ -519,6 +608,99 @@
               {
                 "type": "string"
               }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/file/{name}":{
+        "get":{
+          "description":"Get file",
+          "tags":["File"],
+          "parameters":[{
+            "in":"path",
+            "name":"name",
+            "description": "name",
+             "required": true,
+             "schema":
+              {
+                "type": "string"
+              }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/news":{
+        "get":{
+          "description":"Get file",
+          "tags":["News"],
+          "parameters":[{
+            "in":"query",
+            "name":"part",
+            "description": "part",
+             "required": true,
+             "schema":
+              {
+                "type": "string"
+              }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/events":{
+        "get":{
+          "description":"Get all events",
+          "tags":["Events"],
+          "parameters":[{
+            "in":"query",
+            "name":"part",
+            "description": "part",
+             "required": true,
+             "schema":
+              {
+                "type": "string"
+              }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        },
+        "post":{
+          "description":"Register Event",
+          "tags":["Events"],
+          "parameters":[{
+            "in":"body",
+            "name":"body",
+            "description":"Event",
+            "required":true,
+            "schema":{
+              "$ref":"#/definitions/Event"
+            }
           }],
           "responses":{
             "200":{
@@ -668,6 +850,52 @@
           },
           "Source":{
             "type":"string",
+            "required":true
+          }
+        }
+      },
+      "Event":{
+        "type":"object",
+        "properties":{
+          "name":{
+            "type":"string",
+            "required":true
+          },
+          "startDate":{
+            "type":"string",
+            "required":true
+          },
+          "endDate":{
+            "type":"string",
+            "required":true
+          },
+          "color":{
+            "type":"string",
+            "required":true
+          }
+        }
+      },
+      "Tutorial":{
+        "type":"object",
+        "properties":{
+          "Class":{
+            "type":"string",
+            "required":true
+          },
+          "Date":{
+            "type":"string",
+            "required":true
+          },
+          "Text":{
+            "type":"string",
+            "required":true
+          },
+          "Title":{
+            "type":"string",
+            "required":true
+          },
+          "ID":{
+            "type":"number",
             "required":true
           }
         }

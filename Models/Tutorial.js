@@ -6,7 +6,7 @@ const tutorialSchema = new mongoose.Schema({
         type:Number
     },
     Data:{
-        type:Number
+        type:Date
     },
     Text:{
         type:String

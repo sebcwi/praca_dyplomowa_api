@@ -15,6 +15,9 @@ const dungeonRoutes = require('./Routes/DungeonRoutes')
 const tutorialRouter = require('./Routes/TutorialRoutes')
 const dlcRoutes = require('./Routes/DlcRoutes')
 const historyRoutes = require('./Routes/HistoryRoutes')
+const FileRoutes = require('./Routes/FilesRoutes')
+const NewsRoutes = require('./Routes/NewsRoutes')
+const EventRoutes = require('./Routes/EventRoutes')
 
 const mongDB = require('./DB/mongoose')
 const swagerOption = require('./swagger/swagger.json')
@@ -32,6 +35,9 @@ app.use('/tutorial',tutorialRouter)
 app.use('/user',userRoutes)
 app.use('/dlc',dlcRoutes)
 app.use('/history',historyRoutes)
+app.use('/file',FileRoutes)
+app.use('/news',NewsRoutes)
+app.use('/events',EventRoutes)
 
 
 app.listen(PORT, () => {

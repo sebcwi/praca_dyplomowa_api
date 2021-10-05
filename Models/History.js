@@ -12,6 +12,9 @@ const historySchema = new mongoose.Schema({
     },
     Source:{
         type:String
+    },
+    Extansion:{
+        type:String
     }
 })
 
