@@ -1,0 +1,381 @@
+[{
+  "_id": {
+    "$oid": "611f93555fdd1d1e263e21d0"
+  },
+  "idClass": 1,
+  "Name": "Gladiator",
+  "Part": "Tanks",
+  "Disciplies": "Disciples of War",
+  "url": "/class/Gladiator",
+  "type": "class"
+},{
+  "_id": {
+    "$oid": "611f93c85fdd1d1e263e21d1"
+  },
+  "Name": "Paladin",
+  "Part": "Tanks",
+  "Disciplies": "Disciples of War",
+  "url": "/class/Paladin",
+  "idClass": 19,
+  "type": "job"
+},{
+  "_id": {
+    "$oid": "611f94695fdd1d1e263e21d2"
+  },
+  "Name": "Marauder",
+  "Part": "Tanks",
+  "Disciplies": "Disciples of War",
+  "url": "/class/Marauder",
+  "idClass": 3,
+  "type": "class"
+},{
+  "_id": {
+    "$oid": "611f94855fdd1d1e263e21d3"
+  },
+  "Name": "Warrior",
+  "Part": "Tanks",
+  "Disciplies": "Disciples of War",
+  "url": "/class/Warrior",
+  "idClass": 21,
+  "type": "job"
+},{
+  "_id": {
+    "$oid": "611f94d75fdd1d1e263e21d4"
+  },
+  "Name": "Dark_Knight",
+  "Part": "Tanks",
+  "Disciplies": "Disciples of War",
+  "url": "/class/Dark_Knight",
+  "idClass": 32,
+  "type": "class"
+},{
+  "_id": {
+    "$oid": "611f94fd5fdd1d1e263e21d5"
+  },
+  "Name": "Gunbreaker",
+  "Part": "Tanks",
+  "Disciplies": "Disciples of War",
+  "url": "/class/Gunbreaker",
+  "idClass": 37,
+  "type": "job"
+},{
+  "_id": {
+    "$oid": "611f95325fdd1d1e263e21d6"
+  },
+  "Name": "Pugilist",
+  "Part": "Melee DPS",
+  "Disciplies": "Disciples of War",
+  "url": "/class/Puglist",
+  "idClass": 2,
+  "type": "class"
+},{
+  "_id": {
+    "$oid": "611f96275fdd1d1e263e21d7"
+  },
+  "Name": "Monk",
+  "Part": "Melee DPS",
+  "Disciplies": "Disciples of War",
+  "url": "/class/Monk",
+  "idClass": 20,
+  "type": "job"
+},{
+  "_id": {
+    "$oid": "611f964e5fdd1d1e263e21d8"
+  },
+  "Name": "Lancer",
+  "Part": "Melee DPS",
+  "Disciplies": "Disciples of War",
+  "url": "/class/Lancer",
+  "idClass": 4,
+  "type": "class"
+},{
+  "_id": {
+    "$oid": "611f96815fdd1d1e263e21d9"
+  },
+  "Name": "Dragoon",
+  "Part": "Melee DPS",
+  "Disciplies": "Disciples of War",
+  "url": "/class/Dragoon",
+  "idClass": 22,
+  "type": "job"
+},{
+  "_id": {
+    "$oid": "611f96a75fdd1d1e263e21da"
+  },
+  "Name": "Rogue",
+  "Part": "Melee DPS",
+  "Disciplies": "Disciples of War",
+  "url": "/class/Rogue",
+  "idClass": 29,
+  "type": "class"
+},{
+  "_id": {
+    "$oid": "611f96ca5fdd1d1e263e21db"
+  },
+  "Name": "Ninja",
+  "Part": "Melee DPS",
+  "Disciplies": "Disciples of War",
+  "url": "/class/Ninja",
+  "idClass": 30,
+  "type": "job"
+},{
+  "_id": {
+    "$oid": "611f96f45fdd1d1e263e21dc"
+  },
+  "Name": "Samurai",
+  "Part": "Melee DPS",
+  "Disciplies": "Disciples of War",
+  "url": "/class/Samurai",
+  "idClass": 34,
+  "type": "job"
+},{
+  "_id": {
+    "$oid": "611f97435fdd1d1e263e21dd"
+  },
+  "Name": "Archer",
+  "Part": "Physical Ranged DPS",
+  "Disciplies": "Disciples of War",
+  "url": "/class/Archer",
+  "idClass": 5,
+  "type": "class"
+},{
+  "_id": {
+    "$oid": "611f979e5fdd1d1e263e21df"
+  },
+  "Name": "Bard",
+  "Part": "Physical Ranged DPS",
+  "Disciplies": "Disciples of War",
+  "url": "/class/Bard",
+  "idClass": 23,
+  "type": "job"
+},{
+  "_id": {
+    "$oid": "611f9ba75fdd1d1e263e21e0"
+  },
+  "Name": "Machinist",
+  "Part": "Physical Ranged DPS",
+  "Disciplies": "Disciples of War",
+  "url": "/class/Machinist",
+  "idClass": 31,
+  "type": "job"
+},{
+  "_id": {
+    "$oid": "611f9bce5fdd1d1e263e21e1"
+  },
+  "Name": "Dancer",
+  "Part": "Physical Ranged DPS",
+  "Disciplies": "Disciples of War",
+  "url": "/class/Dancer",
+  "idClass": 38,
+  "type": "job"
+},{
+  "_id": {
+    "$oid": "611f9c015fdd1d1e263e21e2"
+  },
+  "Name": "Thaumaturge",
+  "Part": "Magical Ranged DPS",
+  "Disciplies": "Disciples of Magic",
+  "url": "/class/Thaumaturge",
+  "idClass": 7,
+  "type": "class"
+},{
+  "_id": {
+    "$oid": "611f9c485fdd1d1e263e21e3"
+  },
+  "Name": "Black_Mage",
+  "Part": "Magical Ranged DPS",
+  "Disciplies": "Disciples of Magic",
+  "url": "/class/Black_Mage",
+  "idClass": 25,
+  "type": "job"
+},{
+  "_id": {
+    "$oid": "611f9ca35fdd1d1e263e21e4"
+  },
+  "Name": "Arcanist",
+  "Part": "Magical Ranged DPS",
+  "Disciplies": "Disciples of Magic",
+  "url": "/class/Arcanist",
+  "idClass": 26,
+  "type": "class"
+},{
+  "_id": {
+    "$oid": "611f9cc65fdd1d1e263e21e5"
+  },
+  "Name": "Summoner",
+  "Part": "Magical Ranged DPS",
+  "Disciplies": "Disciples of Magic",
+  "url": "/class/Summoner",
+  "idClass": 27,
+  "type": "job"
+},{
+  "_id": {
+    "$oid": "611f9cf05fdd1d1e263e21e6"
+  },
+  "Name": "Red_Mage",
+  "Part": "Magical Ranged DPS",
+  "Disciplies": "Disciples of Magic",
+  "url": "/class/Red_Mage",
+  "idClass": 35,
+  "type": "job"
+},{
+  "_id": {
+    "$oid": "611f9d095fdd1d1e263e21e7"
+  },
+  "Name": "Blue_Mage",
+  "Part": "Magical Ranged DPS",
+  "Disciplies": "Disciples of Magic",
+  "url": "/class/Blue_Mage",
+  "idClass": 36,
+  "type": "job"
+},{
+  "_id": {
+    "$oid": "611f9d865fdd1d1e263e21e8"
+  },
+  "Name": "Conjurer",
+  "Part": "Healer",
+  "Disciplies": "Disciples of Magic",
+  "url": "/class/Conjurer",
+  "idClass": 6,
+  "type": "class"
+},{
+  "_id": {
+    "$oid": "611f9db65fdd1d1e263e21e9"
+  },
+  "Name": "White_Mage",
+  "Part": "Healer",
+  "Disciplies": "Disciples of Magic",
+  "url": "/class/White_Mage",
+  "idClass": 24,
+  "type": "job"
+},{
+  "_id": {
+    "$oid": "611f9deb5fdd1d1e263e21ea"
+  },
+  "Name": "Scholar",
+  "Part": "Healer",
+  "Disciplies": "Disciples of Magic",
+  "url": "/class/Scholar",
+  "idClass": 28,
+  "type": "job"
+},{
+  "_id": {
+    "$oid": "611f9e525fdd1d1e263e21eb"
+  },
+  "Name": "Astrologian",
+  "Part": "Healer",
+  "Disciplies": "Disciples of Magic",
+  "url": "/class/Astrologian",
+  "idClass": 33,
+  "type": "job"
+},{
+  "_id": {
+    "$oid": "611f9ee45fdd1d1e263e21ec"
+  },
+  "Name": "Botanist",
+  "Part": "Gather",
+  "Disciplies": "Disciples of Land",
+  "url": "/class/Botanist",
+  "idClass": 17,
+  "type": "gather"
+},{
+  "_id": {
+    "$oid": "611f9ef65fdd1d1e263e21ed"
+  },
+  "Name": "Miner",
+  "Part": "Gather",
+  "Disciplies": "Disciples of Land",
+  "url": "/class/Miner",
+  "idClass": 16,
+  "type": "gather"
+},{
+  "_id": {
+    "$oid": "611f9f0f5fdd1d1e263e21ee"
+  },
+  "Name": "Fisher",
+  "Part": "Gather",
+  "Disciplies": "Disciples of Land",
+  "url": "/class/Fisher",
+  "idClass": 18,
+  "type": "gather"
+},{
+  "_id": {
+    "$oid": "611f9f815fdd1d1e263e21ef"
+  },
+  "Name": "Carpenter",
+  "Part": "Crafter",
+  "Disciplies": "Disciples of Hand",
+  "url": "/class/Carpenter",
+  "idClass": 8,
+  "type": "crafter"
+},{
+  "_id": {
+    "$oid": "611f9fab5fdd1d1e263e21f0"
+  },
+  "Name": "Blacksmith",
+  "Part": "Crafter",
+  "Disciplies": "Disciples of Hand",
+  "url": "/class/Blacksmith",
+  "idClass": 9,
+  "type": "crafter"
+},{
+  "_id": {
+    "$oid": "611f9fc85fdd1d1e263e21f1"
+  },
+  "Name": "Armorer",
+  "Part": "Crafter",
+  "Disciplies": "Disciples of Hand",
+  "url": "/class/Armorer",
+  "idClass": 10,
+  "type": "crafter"
+},{
+  "_id": {
+    "$oid": "611f9fdb5fdd1d1e263e21f2"
+  },
+  "Name": "Goldsmith",
+  "Part": "Crafter",
+  "Disciplies": "Disciples of Hand",
+  "url": "/class/Goldsmith",
+  "idClass": 11,
+  "type": "crafter"
+},{
+  "_id": {
+    "$oid": "611f9fef5fdd1d1e263e21f3"
+  },
+  "Name": "Leatherworker",
+  "Part": "Crafter",
+  "Disciplies": "Disciples of Hand",
+  "url": "/class/Leatherworker",
+  "idClass": 12,
+  "type": "crafter"
+},{
+  "_id": {
+    "$oid": "611fa0085fdd1d1e263e21f4"
+  },
+  "Name": "Weaver",
+  "Part": "Crafter",
+  "Disciplies": "Disciples of Hand",
+  "url": "/class/Weaver",
+  "idClass": 13,
+  "type": "crafter"
+},{
+  "_id": {
+    "$oid": "611fa0255fdd1d1e263e21f5"
+  },
+  "Name": "Alchemist",
+  "Part": "Crafter",
+  "Disciplies": "Disciples of Hand",
+  "url": "/class/Alchemist",
+  "idClass": 14,
+  "type": "crafter"
+},{
+  "_id": {
+    "$oid": "611fa0365fdd1d1e263e21f6"
+  },
+  "Name": "Culinarian",
+  "Part": "Crafter",
+  "Disciplies": "Disciples of Hand",
+  "url": "/class/Culinarian",
+  "idClass": 15,
+  "type": "crafter"
+}]

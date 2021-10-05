@@ -1,0 +1,671 @@
+[{
+  "_id": {
+    "$oid": "6124cb5c229dc13da994f624"
+  },
+  "Class": "Marauder",
+  "Name": "Heavy Swing",
+  "Description": "Delivers an attack with a potency of 200.",
+  "Level": 1,
+  "imgURL": "/i/000000/000260_hr1.png",
+  "idSkill": 31
+},{
+  "_id": {
+    "$oid": "6124cd18229dc13da994f625"
+  },
+  "Class": "Marauder",
+  "Name": "Maim",
+  "Description": "Delivers an attack with a potency of 100.<br/>\n<span style=\"color:#00cc22;\">Combo Action:</span> <span style=\"color:#ff7b1a;\">Heavy Swing</span><br/>\n\n<span style=\"color:#00cc22;\">Combo Potency:</span> 320 <br/>\n<span style=\"color:#00cc22;\">Combo Bonus: </span>Increases <span style=\"color:#ff7b1a;\">Beast Gauge</span> by 10<br/>",
+  "Level": 4,
+  "imgURL": "/i/000000/000255_hr1.png",
+  "idSkill": 37
+},{
+  "_id": {
+    "$oid": "6124cddd229dc13da994f626"
+  },
+  "Class": "Marauder",
+  "Name": "Berserk",
+  "Description": "Guarantees that all attacks are critical and direct hits.<br/><span style=\"color:#00cc22;\">Duration:</span> 10s <br /><span style=\"color:#00cc22;\">Additional Effect: </span>Extends <span style=\"color:#ff7b1a;\">Storm's Eye</span> duration by 15s to a maximum of 60s",
+  "Level": 6,
+  "imgURL": "/i/000000/000259_hr1.png",
+  "idSkill": 38
+},{
+  "_id": {
+    "$oid": "6124ce78229dc13da994f627"
+  },
+  "Class": "Marauder",
+  "Name": "Overpower",
+  "Description": "Delivers an attack with a potency of 130 to all enemies in a cone before you.",
+  "Level": 10,
+  "imgURL": "/i/000000/000254_hr1.png",
+  "idSkill": 41
+},{
+  "_id": {
+    "$oid": "6124cf38229dc13da994f628"
+  },
+  "Class": "Marauder",
+  "Name": "Thrill of Battle",
+  "Description": "Increases maximum HP by 20% and restores the amount increased.<br/> <span style=\"color:#00cc22;\">Additional Effect: </span>Increases HP recovery via healing actions on self by 20%<br /><span style=\"color:#00cc22;\">Duration:</span> 10s",
+  "Level": 30,
+  "imgURL": "/i/000000/000263_hr1.png",
+  "idSkill": 40
+},{
+  "_id": {
+    "$oid": "6124d216229dc13da994f629"
+  },
+  "Class": "Marauder",
+  "Name": "Storm's Path",
+  "Description": "Delivers an attack with a potency of 100.<br/><span style=\"color:#00cc22;\">Combo Action:</span> <span style=\"color:#ff7b1a;\">Maim</span><br/><span style=\"color:#00cc22;\">Combo Potency:</span> 420<br/><span style=\"color:#00cc22;\">Combo Bonus:</span> Restores own HP<br/><span style=\"color:#00cc22;\">Cure Potency: </span>250 <br /><span style=\"color:#00cc22;\">Combo Bonus:</span> Increases <span style=\"color:#ff7b1a;\">Beast Gauge</span> by 20",
+  "Level": 26,
+  "imgURL": "/i/000000/000258_hr1.png",
+  "idSkill": 42
+},{
+  "_id": {
+    "$oid": "6124d262229dc13da994f62a"
+  },
+  "Class": "Marauder",
+  "Name": "Holmgang",
+  "Description": "Brace yourself for an enemy onslaught, preventing most attacks from reducing your HP to less than 1.<br/><span style=\"color:#00cc22;\">Duration: </span>8s <br/>When a target is selected, halts their movement with chains.",
+  "Level": 42,
+  "imgURL": "/i/000000/000266_hr1.png",
+  "idSkill": 43
+},{
+  "_id": {
+    "$oid": "6124d2a0229dc13da994f62b"
+  },
+  "Class": "Marauder",
+  "Name": "Vengeance",
+  "Description": "Reduces damage taken by 30% and delivers an attack with a potency of 55 every time you suffer physical damage.<br/><span style=\"color:#00cc22;\">Duration:</span> 15s",
+  "Level": 38,
+  "imgURL": "/i/000000/000267_hr1.png",
+  "idSkill": 44
+},{
+  "_id": {
+    "$oid": "6124d2ea229dc13da994f62c"
+  },
+  "Class": "Marauder",
+  "Name": "Storm's Eye",
+  "Description": "Delivers an attack with a potency of 100.<br/><span style=\"color:#00cc22;\">Combo Action:</span> <span style=\"color:#ff7b1a;\">Maim</span><br/><span style=\"color:#00cc22;\">Combo Potency:</span> 420<br/><span style=\"color:#00cc22;\">Combo Bonus:</span> Increases damage dealt by 10%<br/><span style=\"color:#00cc22;\">Duration:</span> 30s<br/>Extends <span style=\"color:#ff7b1a;\">Storm's Eye</span> duration by 30s to a maximum of 60s. <br /><span style=\"color:#00cc22;\">Combo Bonus:</span> Increases <span style=\"color:#ff7b1a;\">Beast Gauge</span> by 10",
+  "Level": 50,
+  "imgURL": "/i/000000/000264_hr1.png",
+  "idSkill": 45
+},{
+  "_id": {
+    "$oid": "6124d30f229dc13da994f62d"
+  },
+  "Class": "Marauder",
+  "Name": "Tomahawk",
+  "Description": "Delivers a ranged attack with a potency of 140.<br/><span style=\"color:#00cc22;\">Additional Effect:</span> Increased enmity",
+  "Level": 15,
+  "imgURL": "/i/000000/000261_hr1.png",
+  "idSkill": 46
+},{
+  "_id": {
+    "$oid": "6124d349229dc13da994f62e"
+  },
+  "Class": "Marauder",
+  "Name": "Defiance",
+  "Description": "Significantly increases enmity generation.Effect ends upon reuse.",
+  "Level": 10,
+  "imgURL": "/i/002000/002551_hr1.png",
+  "idSkill": 48
+},{
+  "_id": {
+    "$oid": "6124d73b229dc13da994f635"
+  },
+  "Class": "Warrior",
+  "Name": "Inner Beast",
+  "Description": "Delivers an attack with a potency of 350.<br/><span style=\"color:#00cc22;\">Beast Gauge Cost:</span> 50",
+  "Level": 35,
+  "imgURL": "/i/002000/002553_hr1.png",
+  "idSkill": 49
+},{
+  "_id": {
+    "$oid": "6124d778229dc13da994f636"
+  },
+  "Class": "Warrior",
+  "Name": "Steel Cyclone",
+  "Description": "Delivers an attack with a potency of 220 to all nearby enemies.<br/><span style=\"color:#00cc22;\">Beast Gauge Cost:</span> 50",
+  "Level": 45,
+  "imgURL": "/i/002000/002552_hr1.png",
+  "idSkill": 51
+},{
+  "_id": {
+    "$oid": "6124d7c6229dc13da994f637"
+  },
+  "Class": "Warrior",
+  "Name": "Infuriate",
+  "Description": "Increases <span style=\"color:#ff7b1a;\">Beast Gauge</span> by 50. <br/><span style=\"color:#00cc22;\">Additional Effect: </span>Grants <span style=\"color:#ff7b1a;\">Nascent Chaos</span><br /><span style=\"color:#00cc22;\">Duration: </span>30s<br /><span style=\"color:#00cc22;\">Maximum Charges: </span>2<br/>Can only be executed while in combat.",
+  "Level": 50,
+  "imgURL": "/i/002000/002555_hr1.png",
+  "idSkill": 52
+},{
+  "_id": {
+    "$oid": "6124d846229dc13da994f638"
+  },
+  "Class": "Warrior",
+  "Name": "Fell Cleave",
+  "Description": "Delivers an attack with a potency of 590.<br/><span style=\"color:#00cc22;\">Beast Gauge Cost:</span> 50 <br />※Action changes to <span style=\"color:#ff7b1a;\">Inner Chaos</span> while under the effect of <span style=\"color:#ff7b1a;\">Nascent Chaos</span>.",
+  "Level": 54,
+  "imgURL": "/i/002000/002557_hr1.png",
+  "idSkill": 3549
+},{
+  "_id": {
+    "$oid": "6124d8d2229dc13da994f639"
+  },
+  "Class": "Warrior",
+  "Name": "Decimate",
+  "Description": "Delivers an attack to all nearby enemies with a potency of 250.<br/><span style=\"color:#00cc22;\">Beast Gauge Cost:</span> 50 <br /><br />※Action changes to <span style=\"color:#ff7b1a;\">Chaotic Cyclone</span> while under the effect of <span style=\"color:#ff7b1a;\">Nascent Chaos</span>.",
+  "Level": 60,
+  "imgURL": "/i/002000/002558_hr1.png",
+  "idSkill": 3550
+},{
+  "_id": {
+    "$oid": "6124d90f229dc13da994f63a"
+  },
+  "Class": "Warrior",
+  "Name": "Raw Intuition",
+  "Description": "Reduces damage taken by 20%.<br/><span style=\"color:#00cc22;\">Duration:</span> 6s <br />Shares a recast timer with <span style=\"color:#ff7b1a;\">Nascent Flash</span>.",
+  "Level": 56,
+  "imgURL": "/i/002000/002559_hr1.png",
+  "idSkill": 3551
+},{
+  "_id": {
+    "$oid": "6124d946229dc13da994f63b"
+  },
+  "Class": "Warrior",
+  "Name": "Equilibrium",
+  "Description": "Restores own HP.<br/><span style=\"color:#00cc22;\">Cure Potency:</span> 1,200",
+  "Level": 58,
+  "imgURL": "/i/002000/002560_hr1.png",
+  "idSkill": 3552
+},{
+  "_id": {
+    "$oid": "6124d98b229dc13da994f63c"
+  },
+  "Class": "Warrior",
+  "Name": "Onslaught",
+  "Description": "Rushes target and delivers an attack with a potency of 100.<br/><span style=\"color:#00cc22;\">Beast Gauge Cost:</span> 20<br/>Cannot be executed while bound.",
+  "Level": 62,
+  "imgURL": "/i/002000/002561_hr1.png",
+  "idSkill": 7386
+},{
+  "_id": {
+    "$oid": "6124d9ae229dc13da994f63d"
+  },
+  "Class": "Warrior",
+  "Name": "Upheaval",
+  "Description": "Delivers an attack with a potency of 450.<br/><span style=\"color:#00cc22;\">Beast Gauge Cost:</span> 20",
+  "Level": 64,
+  "imgURL": "/i/002000/002562_hr1.png",
+  "idSkill": 7387
+},{
+  "_id": {
+    "$oid": "6124d9d3229dc13da994f63e"
+  },
+  "Class": "Warrior",
+  "Name": "Shake It Off",
+  "Description": "Creates a barrier around self and all nearby party members that absorbs damage totaling 15% of maximum HP.Dispels <span style=\"color:#ff7b1a;\">Thrill of Battle</span>, <span style=\"color:#ff7b1a;\">Vengeance</span>, and <span style=\"color:#ff7b1a;\">Raw Intuition</span>, increasing damage absorbed by 2% for each effect removed.<br/><span style=\"color:#00cc22;\">Duration:</span> 15s",
+  "Level": 68,
+  "imgURL": "/i/002000/002563_hr1.png",
+  "idSkill": 7388
+},{
+  "_id": {
+    "$oid": "6124d9fd229dc13da994f63f"
+  },
+  "Class": "Warrior",
+  "Name": "Inner Release",
+  "Description": "Allows the use of Beast Gauge actions without cost and nullifies <span style=\"color:#ff7b1a;\">Stun</span>, <span style=\"color:#ff7b1a;\">Sleep</span>, <span style=\"color:#ff7b1a;\">Bind</span>, <span style=\"color:#ff7b1a;\">Heavy</span>, and most knockback and draw-in effects.<br/><span style=\"color:#00cc22;\">Additional Effect:</span> Guarantees that all attacks are critical and direct hits<br/><span style=\"color:#00cc22;\">Duration: </span>10s<br/><span style=\"color:#00cc22;\">Additional Effect: </span>Extends <span style=\"color:#ff7b1a;\">Storm's Eye</span> duration by 15s to a maximum of 60s",
+  "Level": 70,
+  "imgURL": "/i/002000/002564_hr1.png",
+  "idSkill": 7389
+},{
+  "_id": {
+    "$oid": "6124daf3229dc13da994f641"
+  },
+  "Class": "Warrior",
+  "Name": "Mythril Tempest",
+  "Description": "Delivers an attack with a potency of 100 to all nearby enemies.<br/><span style=\"color:#00cc22;\">Combo Action: </span><span style=\"color:#ff7b1a;\">Overpower</span><br/><span style=\"color:#00cc22;\">Combo Potency: </span>200 <br /><span style=\"color:#00cc22;\">Combo Bonus: </span>Extends <span style=\"color:#ff7b1a;\">Storm's Eye</span> duration by 30s to a maximum of 60s <br /><span style=\"color:#00cc22;\">Combo Bonus:</span> Increases <span style=\"color:#ff7b1a;\">Beast Gauge</span> by 20",
+  "Level": 40,
+  "imgURL": "/i/002000/002565_hr1.png",
+  "idSkill": 16462
+},{
+  "_id": {
+    "$oid": "6124db20229dc13da994f642"
+  },
+  "Class": "Warrior",
+  "Name": "Nascent Flash",
+  "Description": "Grants the effect of <span style=\"color:#ff7b1a;\">Nascent Flash</span>. Also grants target party member <span style=\"color:#ff7b1a;\">Nascent Glint</span>.<br/><span style=\"color:#00cc22;\">Nascent Flash Effect: </span>Absorbs damage dealt as HP<br/><span style=\"color:#00cc22;\">Nascent Glint Effect: </span>Restores HP equaling 50% of that recovered by <span style=\"color:#ff7b1a;\">Nascent Flash</span> while also reducing damage taken by 10%<br/><span style=\"color:#00cc22;\">Duration: </span>6s<br/>Shares a recast timer with <span style=\"color:#ff7b1a;\">Raw Intuition</span>.",
+  "Level": 76,
+  "imgURL": "/i/002000/002567_hr1.png",
+  "idSkill": 16464
+},{
+  "_id": {
+    "$oid": "6124db85229dc13da994f643"
+  },
+  "Class": "Warrior",
+  "Name": "Inner Chaos",
+  "Description": "Delivers an attack with a potency of 2,000.<br/><span style=\"color:#00cc22;\">Additional Effect: </span>Absorbs 100% of damage dealt as HP<br/><span style=\"color:#00cc22;\">Additional Effect: </span>Increases target's damage taken by 10%<br/><span style=\"color:#00cc22;\">Duration: </span>10s<br/>Can only be executed while under the effect of <span style=\"color:#ff7b1a;\">Nascent Chaos</span>. Effect ends upon execution.<br/>※This action cannot be assigned to a hotbar.",
+  "Level": 80,
+  "imgURL": "/i/009000/009429_hr1.png",
+  "idSkill": 17696
+},{
+  "_id": {
+    "$oid": "6124dc88229dc13da994f644"
+  },
+  "Class": "Warrior",
+  "Name": "Chaotic Cyclone",
+  "Description": "Delivers an attack with a potency of 1,200 to all nearby enemies.<br/><span style=\"color:#00cc22;\">Additional Effect: </span>Absorbs 100% of damage dealt as HP<br/><span style=\"color:#00cc22;\">Additional Effect: </span>Increases target's damage taken by 10%<br/><span style=\"color:#00cc22;\">Duration: </span>10s<br/>Can only be executed while under the effect of <span style=\"color:#ff7b1a;\">Nascent Chaos</span>. Effect fades upon execution.<br/>※This action cannot be assigned to a hotbar.",
+  "Level": 72,
+  "imgURL": "/i/009000/009430_hr1.png",
+  "idSkill": 17697
+},{
+  "_id": {
+    "$oid": "6124f936229dc13da994f653"
+  },
+  "Class": "Gladiator",
+  "Name": "Fast Blade",
+  "Description": "Delivers an attack with a potency of 200.",
+  "Level": 1,
+  "imgURL": "/i/000000/000158_hr1.png",
+  "idSkill": 9
+},{
+  "_id": {
+    "$oid": "6124f9c9229dc13da994f65c"
+  },
+  "Class": "Gladiator",
+  "Name": "Riot Blade",
+  "Description": "Delivers an attack with a potency of 100.<br/><span style=\"color:#00cc22;\">Combo Action:</span> <span style=\"color:#ff7b1a;\">Fast Blade</span><br/><span style=\"color:#00cc22;\">Combo Potency:</span> 300 <br /><span style=\"color:#00cc22;\">Combo Bonus:</span> Restores MP",
+  "Level": 4,
+  "imgURL": "/i/000000/000156_hr1.png",
+  "idSkill": 15
+},{
+  "_id": {
+    "$oid": "6124fa9d229dc13da994f65d"
+  },
+  "Class": "Gladiator",
+  "Name": "Shield Bash",
+  "Description": "Delivers an attack with a potency of 110.<br/><span style=\"color:#00cc22;\">Additional Effect:</span> <span style=\"color:#ff7b1a;\">Stun</span><br/><span style=\"color:#00cc22;\">Duration:</span> 6s",
+  "Level": 10,
+  "imgURL": "/i/000000/000154_hr1.png",
+  "idSkill": 16
+},{
+  "_id": {
+    "$oid": "6124fb2b229dc13da994f65e"
+  },
+  "Class": "Gladiator",
+  "Name": "Sentinel",
+  "Description": "Reduces damage taken by 30%.<br/><span style=\"color:#00cc22;\">Duration:</span> 15s",
+  "Level": 38,
+  "imgURL": "/i/000000/000151_hr1.png",
+  "idSkill": 17
+},{
+  "_id": {
+    "$oid": "6124fb7d229dc13da994f65f"
+  },
+  "Class": "Gladiator",
+  "Name": "Fight or Flight",
+  "Description": "Increases physical damage dealt by 25%.<br/><span style=\"color:#00cc22;\">Duration:</span> 25s",
+  "Level": 2,
+  "imgURL": "/i/000000/000166_hr1.png",
+  "idSkill": 20
+},{
+  "_id": {
+    "$oid": "6124fbcd229dc13da994f660"
+  },
+  "Class": "Gladiator",
+  "Name": "Rage of Halone",
+  "Description": "Delivers an attack with a potency of 100.<br/><span style=\"color:#00cc22;\">Combo Action:</span> <span style=\"color:#ff7b1a;\">Riot Blade</span><br/><span style=\"color:#00cc22;\">Combo Potency:</span> 350",
+  "Level": 26,
+  "imgURL": "/i/000000/000155_hr1.png",
+  "idSkill": 21
+},{
+  "_id": {
+    "$oid": "6124fc11229dc13da994f661"
+  },
+  "Class": "Gladiator",
+  "Name": "Circle of Scorn",
+  "Description": "Delivers an attack with a potency of 120 to all nearby enemies.<br/><span style=\"color:#00cc22;\">Additional Effect:</span> Damage over time<br/><span style=\"color:#00cc22;\">Potency:</span> 35<br/><span style=\"color:#00cc22;\">Duration:</span> 15s",
+  "Level": 50,
+  "imgURL": "/i/000000/000161_hr1.png",
+  "idSkill": 23
+},{
+  "_id": {
+    "$oid": "6124fcaa229dc13da994f662"
+  },
+  "Class": "Gladiator",
+  "Name": "Shield Lob",
+  "Description": "Delivers a ranged attack with a potency of 120.<br/><span style=\"color:#00cc22;\">Additional Effect:</span> Increased enmity",
+  "Level": 15,
+  "imgURL": "/i/000000/000164_hr1.png",
+  "idSkill": 24
+},{
+  "_id": {
+    "$oid": "6124fd00229dc13da994f663"
+  },
+  "Class": "Gladiator",
+  "Name": "Iron Will",
+  "Description": "Significantly increases enmity generation.<br/>Effect ends upon reuse.",
+  "Level": 10,
+  "imgURL": "/i/002000/002505_hr1.png",
+  "idSkill": 28
+},{
+  "_id": {
+    "$oid": "6124fd5f229dc13da994f664"
+  },
+  "Class": "Gladiator",
+  "Name": "Total Eclipse",
+  "Description": "Delivers an attack with a potency of 120 to all nearby enemies.",
+  "Level": 6,
+  "imgURL": "/i/002000/002511_hr1.png",
+  "idSkill": 7381
+},{
+  "_id": {
+    "$oid": "6124fe49229dc13da994f669"
+  },
+  "Class": "Paladin",
+  "Name": "Cover",
+  "Description": "Take all damage intended for another party member.<br/><span style=\"color:#00cc22;\">Duration:</span> 12s<br/><span style=\"color:#00cc22;\">Oath Gauge Cost: </span>50<br/>Can only be executed when member is closer than 10 yalms. Does not activate with certain attacks",
+  "Level": 45,
+  "imgURL": "/i/002000/002501_hr1.png",
+  "idSkill": 27
+},{
+  "_id": {
+    "$oid": "61260d894f08c74d3cafab4f"
+  },
+  "Class": "Paladin",
+  "Name": "Spirits Within",
+  "Description": "Delivers an attack with a potency of 100.<br/>Potency increases up to 370 as own HP nears maximum. <br /><span style=\"color:#00cc22;\">Additional Effect: </span>Restores MP",
+  "Level": 30,
+  "imgURL": "/i/002000/002503_hr1.png",
+  "idSkill": 29
+},{
+  "_id": {
+    "$oid": "61260dee4f08c74d3cafab50"
+  },
+  "Class": "Paladin",
+  "Name": "Hallowed Ground",
+  "Description": "Renders you impervious to most attacks.<br/><span style=\"color:#00cc22;\">Duration:</span> 10s",
+  "Level": 50,
+  "imgURL": "/i/002000/002502_hr1.png",
+  "idSkill": 30
+},{
+  "_id": {
+    "$oid": "61260e244f08c74d3cafab51"
+  },
+  "Class": "Paladin",
+  "Name": "Goring Blade",
+  "Description": "Delivers an attack with a potency of 100.<br/><span style=\"color:#00cc22;\">Combo Action:</span> <span style=\"color:#ff7b1a;\">Riot Blade</span><br/><span style=\"color:#00cc22;\">Combo Potency:</span> 390<br/><span style=\"color:#00cc22;\">Combo Bonus:</span> Damage over time<br/><span style=\"color:#00cc22;\">Potency:</span> 85<br/><span style=\"color:#00cc22;\">Duration:</span> 21s",
+  "Level": 54,
+  "imgURL": "/i/002000/002506_hr1.png",
+  "idSkill": 3538
+},{
+  "_id": {
+    "$oid": "61260eca4f08c74d3cafab52"
+  },
+  "Class": "Paladin",
+  "Name": "Royal Authority",
+  "Description": "Delivers an attack with a potency of 100.<br/><span style=\"color:#00cc22;\">Combo Action:</span> <span style=\"color:#ff7b1a;\">Riot Blade</span><br/><span style=\"color:#00cc22;\">Combo Potency:</span> 550 <br /><span style=\"color:#00cc22;\">Combo Bonus: </span>Grants 3 stacks of <span style=\"color:#ff7b1a;\">Sword Oath</span><br /><span style=\"color:#00cc22;\">Duration: </span>15s",
+  "Level": 60,
+  "imgURL": "/i/002000/002507_hr1.png",
+  "idSkill": 3539
+},{
+  "_id": {
+    "$oid": "61260f844f08c74d3cafab53"
+  },
+  "Class": "Paladin",
+  "Name": "Divine Veil",
+  "Description": "Upon HP recovery via healing magic cast by self or a party member, a protective barrier is cast on all party members within a radius of 15 yalms.<br/><span style=\"color:#00cc22;\">Duration:</span> 30s<br/><span style=\"color:#00cc22;\">Barrier Effect:</span> Prevents damage up to 10% of your maximum HP<br/><span style=\"color:#00cc22;\">Duration:</span> 30s<br/>Effect ends upon additional HP recovery via healing magic.",
+  "Level": 56,
+  "imgURL": "/i/002000/002508_hr1.png",
+  "idSkill": 3540
+},{
+  "_id": {
+    "$oid": "61260ff44f08c74d3cafab54"
+  },
+  "Class": "Paladin",
+  "Name": "Clemency",
+  "Description": "Restores target's HP.<br/><span style=\"color:#00cc22;\">Cure Potency:</span> 1,200<br/><span style=\"color:#00cc22;\">Additional Effect:</span> Restores to self 50% of HP restored to target if target is a party member",
+  "Level": 58,
+  "imgURL": "/i/002000/002509_hr1.png",
+  "idSkill": 3541
+},{
+  "_id": {
+    "$oid": "6126109a4f08c74d3cafab55"
+  },
+  "Class": "Paladin",
+  "Name": "Sheltron",
+  "Description": "Block incoming attacks.<br/><span style=\"color:#00cc22;\">Duration:</span> 6 s<br/><span style=\"color:#00cc22;\">Oath Gauge Cost:</span> 50",
+  "Level": 35,
+  "imgURL": "/i/002000/002510_hr1.png",
+  "idSkill": 3542
+},{
+  "_id": {
+    "$oid": "612610d84f08c74d3cafab56"
+  },
+  "Class": "Paladin",
+  "Name": "Intervention",
+  "Description": "Reduces target party member's damage taken by 10%.<br/><span style=\"color:#00cc22;\">Duration:</span> 6s<br/><span style=\"color:#00cc22;\">Additional Effect:</span> Increases damage reduction by another 50% of the effect of <span style=\"color:#ff7b1a;\">Rampart</span> or <span style=\"color:#ff7b1a;\">Sentinel</span> if either are active<br/><span style=\"color:#00cc22;\">Oath Gauge Cost:</span> 50",
+  "Level": 62,
+  "imgURL": "/i/002000/002512_hr1.png",
+  "idSkill": 7382
+},{
+  "_id": {
+    "$oid": "612611614f08c74d3cafab57"
+  },
+  "Class": "Paladin",
+  "Name": "Requiescat",
+  "Description": "Deals unaspected damage with a potency of 150. Potency increases up to 550 as MP nears maximum.<br/><span style=\"color:#00cc22;\">Additional Effect:</span> Increases attack magic and healing magic potency by 50% if current MP is at 80% or higher , and allows spells to be cast immediately <br/> <span style=\"color:#00cc22;\">Duration:</span> 12s",
+  "Level": 68,
+  "imgURL": "/i/002000/002513_hr1.png",
+  "idSkill": 7383
+},{
+  "_id": {
+    "$oid": "612611d74f08c74d3cafab58"
+  },
+  "Class": "Paladin",
+  "Name": "Holy Spirit",
+  "Description": "Deals unaspected damage with a potency of 350.",
+  "Level": 64,
+  "imgURL": "/i/002000/002514_hr1.png",
+  "idSkill": 7384
+},{
+  "_id": {
+    "$oid": "6126122b4f08c74d3cafab59"
+  },
+  "Class": "Paladin",
+  "Name": "Passage of Arms",
+  "Description": "Increases block rate to 100% and creates a designated area in a cone behind you in which party members will only suffer 85% of all damage inflicted.<br/><span style=\"color:#00cc22;\">Duration:</span> 18s<br/>Effect ends upon using another action or moving (including facing a different direction).<br/>Cancels auto-attack upon execution",
+  "Level": 70,
+  "imgURL": "/i/002000/002515_hr1.png",
+  "idSkill": 7385
+},{
+  "_id": {
+    "$oid": "612613384f08c74d3cafab5b"
+  },
+  "Class": "Paladin",
+  "Name": "Prominence",
+  "Description": "Delivers an attack with a potency of 100 to all nearby enemies.<br/><span style=\"color:#00cc22;\">Combo Action: </span><span style=\"color:#ff7b1a;\">Total Eclipse</span><br/><span style=\"color:#00cc22;\">Combo Potency: </span>220 <br /><span style=\"color:#00cc22;\">Combo Bonus: </span>Restores MP",
+  "Level": 40,
+  "imgURL": "/i/002000/002516_hr1.png",
+  "idSkill": 16457
+},{
+  "_id": {
+    "$oid": "612613a64f08c74d3cafab5c"
+  },
+  "Class": "Paladin",
+  "Name": "Holy Circle",
+  "Description": "Deals unaspected damage with a potency of 250 to all nearby enemies.",
+  "Level": 72,
+  "imgURL": "/i/002000/002517_hr1.png",
+  "idSkill": 16458
+},{
+  "_id": {
+    "$oid": "612613f64f08c74d3cafab5d"
+  },
+  "Class": "Paladin",
+  "Name": "Confiteor",
+  "Description": "Deals unaspected damage with a potency of 800 to target and all enemies nearby it.<br/>Can only be executed while under the effect of <span style=\"color:#ff7b1a;\">Requiescat</span>. Effect fades upon execution.",
+  "Level": 80,
+  "imgURL": "/i/002000/002518_hr1.png",
+  "idSkill": 16459
+},{
+  "_id": {
+    "$oid": "6126142f4f08c74d3cafab5e"
+  },
+  "Class": "Paladin",
+  "Name": "Atonement",
+  "Description": "Delivers an attack with a potency of 550.<br/><span style=\"color:#00cc22;\">Additional Effect: </span>Restores MP<br/>Can only be executed while under the effect of <span style=\"color:#ff7b1a;\">Sword Oath</span>.",
+  "Level": 76,
+  "imgURL": "/i/002000/002519_hr1.png",
+  "idSkill": 16460
+},{
+  "_id": {
+    "$oid": "6126150b4f08c74d3cafab5f"
+  },
+  "Class": "Paladin",
+  "Name": "Intervene",
+  "Description": "Rushes target and delivers an attack with a potency of 200.<br/><span style=\"color:#00cc22;\">Maximum Charges: </span>2<br/>Cannot be executed while bound.",
+  "Level": 74,
+  "imgURL": "/i/002000/002520_hr1.png",
+  "idSkill": 16461
+},{
+  "_id": {
+    "$oid": "612615394f08c74d3cafab60"
+  },
+  "Class": "Paladin",
+  "Name": "Atonement",
+  "Description": "Delivers an attack with a potency of 2,000.<br/><span style=\"color:#00cc22;\">Additional Effect: </span>Restores 500 MP<br/><span style=\"color:#00cc22;\">Additional Effect: </span>Increases <span style=\"color:#ff7b1a;\">Oath Gauge</span> by 5<br/>Can only be executed while under the effect of <span style=\"color:#ff7b1a;\">Sword Oath</span>.<br/>※This action cannot be assigned to a hotbar.",
+  "Level": 76,
+  "imgURL": "/i/009000/009370_hr1.png",
+  "idSkill": 17691
+},{
+  "_id": {
+    "$oid": "612617f44f08c74d3cafab61"
+  },
+  "Class": "Dark_Knight",
+  "Name": "Hard Slash",
+  "Description": "Delivers an attack with a potency of 200.",
+  "Level": 1,
+  "imgURL": "/i/003000/003051_hr1.png",
+  "idSkill": 3617
+},{
+  "_id": {
+    "$oid": "6126194f4f08c74d3cafab6e"
+  },
+  "Class": "Dark_Knight",
+  "Name": "Unleash",
+  "Description": "Deals unaspected damage with a potency of 150 to all nearby enemies.",
+  "Level": 6,
+  "imgURL": "/i/003000/003063_hr1.png",
+  "idSkill": 3621
+},{
+  "_id": {
+    "$oid": "612619724f08c74d3cafab6f"
+  },
+  "Class": "Dark_Knight",
+  "Name": "Syphon Strike",
+  "Description": "Delivers an attack with a potency of 100.<br/><span style=\"color:#00cc22;\">Combo Action:</span> <span style=\"color:#ff7b1a;\">Hard Slash</span><br/><span style=\"color:#00cc22;\">Combo Potency:</span> 300<br/><span style=\"color:#00cc22;\">Combo Bonus:</span> Restores MP",
+  "Level": 2,
+  "imgURL": "/i/003000/003054_hr1.png",
+  "idSkill": 3623
+},{
+  "_id": {
+    "$oid": "612619ce4f08c74d3cafab70"
+  },
+  "Class": "Dark_Knight",
+  "Name": "Unmend",
+  "Description": "Deals unaspected damage with a potency of 150.<br/><span style=\"color:#00cc22;\">Additional Effect:</span> Increased enmity",
+  "Level": 15,
+  "imgURL": "/i/003000/003062_hr1.png",
+  "idSkill": 3624
+},{
+  "_id": {
+    "$oid": "6131f2c9b43fbaecb4f42272"
+  },
+  "Class": "Dark_Knight",
+  "Name": "Blood Weapon",
+  "Description": "Increases <span style=\\\"color:#ff7b1a;\\\">Blood Gauge</span> by 10 and restores MP upon landing weaponskills or spells.\\n\\nEffect does not stack when hitting multiple targets with a single attack.\\n\\n<span style=\\\"color:#00cc22;\\\">Duration:</span> 10s",
+  "Level": 35,
+  "imgURL": "/i/003000/003071_hr1.png",
+  "idSkill": 3625
+},{
+  "_id": {
+    "$oid": "6131f306b43fbaecb4f42273"
+  },
+  "Class": "Dark_Knight",
+  "Name": "Grit",
+  "Description": "Significantly increases enmity generation.\\n\\nEffect ends upon reuse.",
+  "Level": 10,
+  "imgURL": "/i/003000/003070_hr1.png",
+  "idSkill": 3629
+},{
+  "_id": {
+    "$oid": "6131f3c6b43fbaecb4f42274"
+  },
+  "Class": "Dark_Knight",
+  "Name": "Souleater",
+  "Description": "Delivers an attack with a potency of 100.\\n\\n<span style=\\\"color:#00cc22;\\\">Combo Action:</span> <span style=\\\"color:#ff7b1a;\\\">Syphon Strike</span>\\n\\n<span style=\\\"color:#00cc22;\\\">Combo Potency:</span> 400\\n\\n<span style=\\\"color:#00cc22;\\\">Combo Bonus:</span> Restores own HP\\n\\n<span style=\\\"color:#00cc22;\\\">Cure Potency: </span>300 <br />\\n<span style=\\\"color:#00cc22;\\\">Combo Bonus:</span> Increases <span style=\\\"color:#ff7b1a;\\\">Blood Gauge</span> by 20",
+  "Level": 26,
+  "imgURL": "/i/003000/003055_hr1.png",
+  "idSkill": 3632
+},{
+  "_id": {
+    "$oid": "6131f431b43fbaecb4f42275"
+  },
+  "Class": "Dark_Knight",
+  "Name": "Dark Mind",
+  "Description": "Reduces magic vulnerability by 20%.\\n\\n<span style=\\\"color:#00cc22;\\\">Duration:</span> 10s",
+  "Level": 45,
+  "imgURL": "/i/003000/003076_hr1.png",
+  "idSkill": 3634
+},{
+  "_id": {
+    "$oid": "6131f476b43fbaecb4f42276"
+  },
+  "Class": "Dark_Knight",
+  "Name": "Shadow Wall",
+  "Description": "Reduces damage taken by 30%.\\n\\n<span style=\\\"color:#00cc22;\\\">Duration:</span> 15s",
+  "Level": 38,
+  "imgURL": "/i/003000/003075_hr1.png",
+  "idSkill": 3636
+},{
+  "_id": {
+    "$oid": "6131f4a5b43fbaecb4f42277"
+  },
+  "Class": "Dark_Knight",
+  "Name": "Living Dead",
+  "Description": "Grants the effect of <span style=\\\"color:#ffff66;\\\">Living Dead</span>. When HP is reduced to 0 while under the effect of <span style=\\\"color:#ffff66;\\\">Living Dead</span>, instead of becoming KO'd, your status will change to <span style=\\\"color:#ffff66;\\\">Walking Dead</span>.\\n\\n<span style=\\\"color:#00cc22;\\\">Living Dead Duration:</span> 10s\\n\\nWhile under the effect of <span style=\\\"color:#ffff66;\\\">Walking Dead</span>, most attacks will not lower your HP below 1. If, before the <span style=\\\"color:#ffff66;\\\">Walking Dead</span> timer runs out, HP is 100% restored, the effect will fade. If 100% is not restored, you will be KO'd.\\n\\n<span style=\\\"color:#00cc22;\\\">Walking Dead Duration:</span> 10s",
+  "Level": 50,
+  "imgURL": "/i/003000/003077_hr1.png",
+  "idSkill": 3638
+},{
+  "_id": {
+    "$oid": "6131f4ceb43fbaecb4f42278"
+  },
+  "Class": "Dark_Knight",
+  "Name": "Salted Earth",
+  "Description": "Creates a patch of salted earth, dealing unaspected damage with a potency of 60 to any enemies who enter.\\n\\n<span style=\\\"color:#00cc22;\\\">Duration:</span> 15s",
+  "Level": 52,
+  "imgURL": "/i/003000/003066_hr1.png",
+  "idSkill": 3639
+},{
+  "_id": {
+    "$oid": "6131f4f8b43fbaecb4f42279"
+  },
+  "Class": "Dark_Knight",
+  "Name": "Carve and Spit",
+  "Description": "Delivers a threefold attack with a potency of 450.\\n\\n<span style=\\\"color:#00cc22;\\\">Additional Effect: </span>Restores MP",
+  "Level": 60,
+  "imgURL": "/i/003000/003058_hr1.png",
+  "idSkill": 3643
+},{
+  "_id": {
+    "$oid": "6131f5a8b43fbaecb4f4227a"
+  },
+  "Class": "Dark_Knight",
+  "Name": "Delirium",
+  "Description": "Allows the execution of <span style=\\\"color:#ff7b1a;\\\">Quietus</span> and <span style=\\\"color:#ff7b1a;\\\">Bloodspiller</span> without cost, restoring MP when landing either weaponskill.\\n\\n<span style=\\\"color:#00cc22;\\\">Duration: </span>10s",
+  "Level": 68,
+  "imgURL": "/i/003000/003078_hr1.png",
+  "idSkill": 7390
+}]

@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "6142080737c9c62f240a9bf4"
+  },
+  "name": "FFXIV Endwalker Official Service Begins",
+  "startDate": "2021-11-22",
+  "endDate": "2021-11-22",
+  "__v": 0,
+  "color": "#ad2115"
+},{
+  "_id": {
+    "$oid": "614217bc808c2f4e56af59dd"
+  },
+  "name": "The Make It Rain Campaign",
+  "startDate": "2021-07-19",
+  "endDate": "2021-07-19",
+  "__v": 0,
+  "color": "#ebae34"
+},{
+  "_id": {
+    "$oid": "614217d1808c2f4e56af59de"
+  },
+  "name": "FFXIV Patch 5.58",
+  "startDate": "2021-07-20",
+  "endDate": "2021-07-20",
+  "__v": 0,
+  "color": "#89f0cf"
+},{
+  "_id": {
+    "$oid": "614217fd808c2f4e56af59df"
+  },
+  "name": "The Moonfire Faire",
+  "startDate": "2021-08-13",
+  "endDate": "2021-08-13",
+  "__v": 0,
+  "color": "#dda2f5"
+},{
+  "_id": {
+    "$oid": "61421873808c2f4e56af59e0"
+  },
+  "name": "The Rising",
+  "startDate": "2021-08-27",
+  "endDate": "2021-08-27",
+  "__v": 0,
+  "color": "#dda2f5"
+},{
+  "_id": {
+    "$oid": "6142189d808c2f4e56af59e1"
+  },
+  "name": "FFXIV FFXV Collaboration Event ",
+  "startDate": "2021-09-13",
+  "endDate": "2021-09-13",
+  "__v": 0,
+  "color": "#dda2f5"
+},{
+  "_id": {
+    "$oid": "614218dd808c2f4e56af59e2"
+  },
+  "name": "Moogle Treasure Trove",
+  "startDate": "2021-10-19",
+  "endDate": "2021-10-19",
+  "__v": 0,
+  "color": "#dda2f5"
+},{
+  "_id": {
+    "$oid": "61421927808c2f4e56af59e3"
+  },
+  "name": "FFXIV Endwalker Early Access Begins",
+  "startDate": "2021-11-19",
+  "endDate": "2021-11-19",
+  "__v": 0,
+  "color": "#dda2f5"
+}]
