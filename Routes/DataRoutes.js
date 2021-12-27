@@ -1,6 +1,7 @@
 const express = require('express')
 const XIVAPI = require('@xivapi/js')
 const dataController = require('../Controllers/DataController')
+const auth = require('../middleware/auth')
 
 const router = express.Router()
 xiv = new XIVAPI()

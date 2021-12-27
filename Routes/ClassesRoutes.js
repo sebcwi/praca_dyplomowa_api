@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const ClassController = require('../Controllers/ClassController')
+const auth = require('../middleware/auth')
 
 router.get('/byPart',ClassController.getAllClassesByPart)
 
@@ -8,6 +9,6 @@ router.get('/byName',ClassController.getClassesByName)
 
 router.get('/skills',ClassController.getClassSkill)
 
-router.post('/skill',ClassController.postNewSkill)
+router.post('/skill',auth,ClassController.postNewSkill)
 
 module.exports = router

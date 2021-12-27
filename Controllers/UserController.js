@@ -1,54 +1,129 @@
 const User = require('../Models/User')
-var crypto = require('crypto');
+const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
+const env = require('../env.json')
 
 const getUserInfo = (req,res) => {
-    let name = req.query.username;
-    User.find({username:name},function (err, useinfo) {
+    let email = req.user.email;
+    User.find({email:email},function (err, useinfo) {
         if (err) return console.error(err);
         res.send(useinfo)
       })
 }
 
-const registerUser = (req,res) => {
-    var sha256 = crypto.createHash('sha256');
-    const passwordHased = sha256.update(req.body.password).digest('hex');
-    const userToSaved = new User({
-            username:req.body.username,
-            password:passwordHased,
-            email:req.body.email,
-            lodestoneID:req.body.lodestoneID
-        })
-    userToSaved.save(function (err) {
-        if (err) {return console.error(err);}
-        res.send(userToSaved)
-      });
+const registerUser = async (req,res) => {
+    try {
+        // Get user input
+        const { username, email, password,lodestoneID } = req.body;
+    
+        // Validate user input
+        if (!(email && password && username)) {
+          res.status(400).send("All input is required");
+        }
+    
+        // check if user already exist
+        // Validate if user exist in our database
+        const oldUser = await User.findOne({ email });
+    
+        if (oldUser) {
+          return res.status(409).send("User Already Exist. Please Login");
+        }
+    
+        //Encrypt user password
+        encryptedPassword = await bcrypt.hash(password, 10);
+    
+        // Create user in our database
+        const user = await User({
+            username:username,
+            email: email.toLowerCase(), // sanitize: convert email to lowercase
+            password: encryptedPassword,
+            lodestoneID: lodestoneID
+        });
+    
+        // Create token
+        const token = jwt.sign(
+          { user_id: user._id, email: email,username: username },
+          env.TOKEN_KEY,
+          {
+            expiresIn: "2h",
+          }
+        );
+        // save user token
+        user.token = token;
+        
+        user.save();
+    
+        // return new user
+        res.status(201).send(user);
+      } catch (err) {
+        console.log(err);
+      }
    
 }
 const changePass = (req,res) => {
-    const user = User.findOneAndUpdate({_id:req.query.id},{password:req.body.password},function(err){
-        if (err) {return console.error(err);}  
-    })
-    res.send({"Status":"200","Message":"Done"})
+    try
+    {
+        const user = User.findOneAndUpdate({_id:req.user.user_id},{password:req.body.password},function(err){
+            if (err) {return console.error(err);}  
+        })
+        res.status(200).send("Done");
+    }
+    catch(err)
+    {
+        res.status(404).send("Fail");
+    }
     
 }
 
 const changeName = (req,res) => {
-    console.log(req.body)
-    const userUpdated = User.findOneAndUpdate({_id:req.query.id},{username:req.body.username},function(err){
-        if (err) {return console.error(err);}
-    })
-    res.send({"Status":"200","Message":"Done"})
+    try
+    {
+            const userUpdated = User.findOneAndUpdate({_id:req.user.user_id},{username:req.body.username},function(err){
+                if (err) {return console.error(err);}
+            })
+            res.status(200).send("Done")
+    }
+    catch(err)
+    {
+        res.status(404).send("Fail");
+    }
 }
 
-const login = (req,res) => {
-    var sha256 = crypto.createHash('sha256');
-    sha256.update(req.body.password)
-    const email = req.body.email
-    const hashedPassword = sha256.digest('hex');
-    User.findOne({email:email,password:hashedPassword},function(err, userLogin){
-        if(err){return console.error(err)}
-        res.send(userLogin)
-    })
+const login = async (req,res) => {
+    try {
+        // Get user input
+        const { email, password } = req.body;
+    
+        // Validate user input
+        if (!(email && password)) {
+          res.status(400).send("All input is required");
+        }
+        // Validate if user exist in our database
+        const user = await User.findOne({ email });
+    
+        if (user && (await bcrypt.compare(password, user.password))) {
+          // Create token
+          const token = jwt.sign(
+            { user_id: user._id, email: email,username: user.username },
+            env.TOKEN_KEY,
+            {
+              expiresIn: "2h",
+            }
+          );
+    
+          // save user token
+          user.token = token;    
+          // user
+          console.log(req.user)
+          res.status(200).send(user);
+        }
+        else
+        {
+          res.status(404).send("Invalid Credentials");
+        }
+      } catch (err) {
+        console.log(err);
+      }
 }
 
 module.exports = {

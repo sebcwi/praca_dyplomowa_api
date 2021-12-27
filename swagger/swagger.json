@@ -10,23 +10,68 @@
           "name":"Sebastian Ćwirko nr albumu: 39564"
       }
     },
+    "securityDefinitions": {
+      "Bearer": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header",
+        "description": "Enter your bearer token in the format **&lt;token>**"
+      }
+    },
     "paths":{
+      "/user/login":{
+        "post":{
+          "description":"Change password",
+          "tags":["User"],
+          "parameters":[{
+                "in":"body",
+                "name":"body",
+                "description":"UserBody",
+                "required":true,
+                "schema":{
+                  "$ref":"#/definitions/UserLogin"
+                }
+              }
+            ],
+          "responses":
+          {
+            "200":{
+              "description": "Success"
+            },
+            "404":{
+            "description": "not found"
+            }
+          }
+        }        
+      },
+      "/user/register":{
+        "post":{
+          "description":"Register user info",
+          "tags":["User"],
+          "parameters":[{
+            "in":"body",
+            "name":"body",
+            "description":"Register user",
+            "required":true,
+            "schema":{
+              "$ref":"#/definitions/User"
+            }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
       "/user/info":{
         "get":{
           "description": "Get user info by name",
           "tags": ["User"],
-          "parameters":[
-            {
-              "name": "username",
-             "in": "query",
-             "description": "username",
-             "required": true,
-             "schema":
-              {
-                "type": "string"
-              }
-            }
-          ],
+          "security": [{ "Bearer": [] }],
           "responses":
           {
             "200":{
@@ -149,51 +194,18 @@
           }
         }
       },
-      "/user/register":{
-        "post":{
-          "description":"Register user info",
-          "tags":["User"],
-          "parameters":[{
-            "in":"body",
-            "name":"body",
-            "description":"Register user",
-            "required":true,
-            "schema":{
-              "$ref":"#/definitions/User"
-            }
-          }],
-          "responses":{
-            "200":{
-              "description":"Success"
-            },
-            "404":{
-              "description":"Not Found"
-            }
-          }
-        }
-      },
+      
       "/user/changePassword":{
         "put":{
           "description":"Change password",
           "tags":["User"],
+          "security": [{ "Bearer": [] }],
           "parameters":[
             {
-              "in":"query",
-              "name":"id",
-              "description":"User ID",
-              "required": true,
-              "schema":{
-                 "type": "string"
-               }
-            },
-            {
               "in":"body",
-              "name":"body",
+              "name":"password",
               "description":"New password",
-              "required":true,
-              "schema":{
-                "$ref":"#/definitions/User"
-              }
+              "required":true
             }
           ],
           "responses":
@@ -211,24 +223,13 @@
         "put":{
           "description":"Change Name",
           "tags":["User"],
+          "security": [{ "Bearer": [] }],
           "parameters":[
             {
-              "in":"query",
-              "name":"id",
-              "description":"User ID",
-              "required": true,
-              "schema":{
-                 "type": "string"
-               }
-            },
-            {
               "in":"body",
-              "name":"body",
+              "name":"username",
               "description":"New name",
-              "required":true,
-              "schema":{
-                "$ref":"#/definitions/User"
-              }
+              "required":true
             }
           ],
           "responses":
@@ -241,31 +242,6 @@
             }
           }
         }
-      },
-      "/user/login":{
-        "post":{
-          "description":"Change password",
-          "tags":["User"],
-          "parameters":[{
-                "in":"body",
-                "name":"body",
-                "description":"UserBody",
-                "required":true,
-                "schema":{
-                  "$ref":"#/definitions/UserLogin"
-                }
-              }
-            ],
-          "responses":
-          {
-            "200":{
-              "description": "Success"
-            },
-            "404":{
-            "description": "not found"
-            }
-          }
-        }        
       },
       "/classes/byPart":{
         "get":{
@@ -319,6 +295,7 @@
         "get":{
           "description":"Get classs skill by name",
           "tags":["Class"],
+          "security": [{ "Bearer": [] }],
           "parameters":[{
             "in":"query",
             "name":"name",
@@ -366,6 +343,7 @@
         "get":{
           "description":"Get all class tutorials by name",
           "tags":["Tutorial"],
+          "security": [{ "Bearer": [] }],
           "parameters":[{
             "in":"query",
             "name":"name",
@@ -484,6 +462,7 @@
         "post":{
           "description":"Register user info",
           "tags":["Dungeons"],
+          "security": [{ "Bearer": [] }],
           "parameters":[{
             "in":"body",
             "name":"body",
@@ -531,6 +510,7 @@
         "post":{
           "description":"Register DLC info",
           "tags":["DLC"],
+          "security": [{ "Bearer": [] }],
           "parameters":[{
             "in":"body",
             "name":"body",
@@ -554,6 +534,7 @@
         "get":{
           "description":"Get all info about patch",
           "tags":["History"],
+          "security": [{ "Bearer": [] }],
           "parameters":[{
             "in":"query",
             "name":"extansion",
@@ -671,6 +652,7 @@
         "get":{
           "description":"Get all events",
           "tags":["Events"],
+          "security": [{ "Bearer": [] }],
           "parameters":[{
             "in":"query",
             "name":"part",

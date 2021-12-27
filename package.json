@@ -19,11 +19,13 @@
   "homepage": "https://github.com/sebcwi/praca_dyplomowa_api#readme",
   "dependencies": {
     "@xivapi/js": "^0.3.3",
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
     "express": "^4.17.1",
     "http": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.1.0",
     "mongoose": "^5.13.7",
     "nodemon": "^2.0.12",

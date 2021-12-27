@@ -14,7 +14,11 @@ const UserSchema = new mongoose.Schema({
     },
     email:{
         type:String,
-        required:true
+        required:true,
+        unique:true
+    },
+    token:{
+        type:String
     },
     lodestoneID:{
         type:Number,

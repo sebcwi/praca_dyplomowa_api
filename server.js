@@ -40,6 +40,7 @@ app.use('/news',NewsRoutes)
 app.use('/events',EventRoutes)
 
 
+
 app.listen(PORT, () => {
-    console.log('Aplication is running on port '+PORT)
-})
+    console.log(`Example app listening at http://localhost:${PORT} and swagger: http://localhost:${PORT}/api-docs`)
+  })
