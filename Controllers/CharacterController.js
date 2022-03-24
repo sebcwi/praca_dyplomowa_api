@@ -4,8 +4,8 @@ xiv = new XIVAPI()
 
 const getByID = (req,res) => {
     xiv.character.get(req.params.id).then((result) => {
-        res.send(result)
-    }).catch(err=>{res.send({msg:err})})
+        res.status(202).send(result)
+    }).catch(err=>{res.status(404).send({msg:err})})
 }
 
 module.exports = {
