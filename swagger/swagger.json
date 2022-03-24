@@ -508,27 +508,6 @@
               "description":"Not Found"
             }
           }
-        },
-        "post":{
-          "description":"Post Dugeons Types",
-          "tags":["Dungeons"],
-          "parameters":[{
-            "in":"body",
-            "name":"body",
-            "description":"Register dungeons types",
-            "required":true,
-            "schema":{
-              "$ref":"#/definitions/DungeonsTypes"
-            }
-          }],
-          "responses":{
-            "200":{
-              "description":"Success"
-            },
-            "404":{
-              "description":"Not Found"
-            }
-          }
         }
       },
       "/dlc/page/{id}":{

@@ -7,7 +7,6 @@ router.get('/page/:id',dungeonController.getDungeons)
 router.post('/',auth,dungeonController.postDungeons)
 
 router.get('/types',dungeonController.getDunegonsType)
-router.post('/types',dungeonController.postDunegonsType)
 
 
 module.exports = router

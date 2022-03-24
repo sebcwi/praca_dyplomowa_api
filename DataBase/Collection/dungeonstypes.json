@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "623c3272946ee00b148d6cc0"
+  },
+  "typeDungeon": "Dungeon",
+  "DPS": 2,
+  "Healers": 1,
+  "Tanks": 1,
+  "Groups": 1
+},{
+  "_id": {
+    "$oid": "623c36c21e376266294c943d"
+  },
+  "typeDungeon": "Trail",
+  "DPS": 4,
+  "Healers": 2,
+  "Tanks": 2,
+  "Groups": 1
+},{
+  "_id": {
+    "$oid": "623c36ce1e376266294c943e"
+  },
+  "typeDungeon": "Raid",
+  "DPS": 4,
+  "Healers": 2,
+  "Tanks": 2,
+  "Groups": 1
+},{
+  "_id": {
+    "$oid": "623c37771e376266294c943f"
+  },
+  "typeDungeon": "Alliance Raid",
+  "DPS": 15,
+  "Healers": 6,
+  "Tanks": 3,
+  "Groups": 3
+}]

@@ -29,10 +29,7 @@ const getDunegonsType = (req,res) => {
     })
 }
 
-const postDunegonsType = (req,res) => {
-    res.status(200).send('postDung')
-}
 
 module.exports = {
-    getDungeons,postDungeons,postDunegonsType,getDunegonsType
+    getDungeons,postDungeons,getDunegonsType
 }
