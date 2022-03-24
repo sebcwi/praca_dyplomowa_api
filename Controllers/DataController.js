@@ -4,27 +4,27 @@ xiv = new XIVAPI()
 
 const getServers = (req,res) => {
     xiv.data.servers().then((result) => {
-        res.send(result)
-    }).catch(err=>{res.send(err)})
+        res.status(202).send(result)
+    }).catch(err=>{res.status(404).send(err)})
 }
 
 const getDataCenters = (req,res) => {
     xiv.data.datacenters().then((result) => {
-        res.send(result)
-    }).catch(err=>{res.send(err)})
+        res.status(202).send(result)
+    }).catch(err=>{res.status(404).send(err)})
 }
 
 
 const listByName = (req,res) => {
     xiv.data.list(req.params.name,{page:req.params.id}).then((result) => {
-        res.send(result)
-    }).catch(err=>{res.send(err)})
+        res.status(202).send(result)
+    }).catch(err=>{res.status(404).send(err)})
 }
 
 const getContent = (req,res) => {
     xiv.data.content().then((result) => {
-        res.send(result)
-    }).catch(err=>{res.send(err)})
+        res.status(202).send(result)
+    }).catch(err=>{res.status(404).send(err)})
 }
 
 

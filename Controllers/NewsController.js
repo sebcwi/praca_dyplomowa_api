@@ -7,11 +7,11 @@ const getNewsByPart = (req,res) => {
     {
         request('http://na.lodestonenews.com/news/all', function (error, response, body) {
             if (!error && response.statusCode === 200) {
-                res.send(body) // Print the google web page.
+                res.status(202).send(body) // Print the google web page.
             }
             else
             {
-                res.send(error)
+                res.status(404).send(error)
             }
         })
     }
@@ -19,11 +19,11 @@ const getNewsByPart = (req,res) => {
     {
         request('http://na.lodestonenews.com/news/'+req.query.part, function (error, response, body) {
             if (!error && response.statusCode === 200) {
-                res.send(body) // Print the google web page.
+                res.status(202).send(body) // Print the google web page.
             }
             else
             {
-                res.send(error)
+                res.status(404).send(err)
             }
         })
     }  

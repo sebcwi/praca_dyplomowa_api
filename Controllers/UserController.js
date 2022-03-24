@@ -6,8 +6,8 @@ const env = require('../env.json')
 const getUserInfo = (req,res) => {
     let email = req.user.email;
     User.find({email:email},function (err, useinfo) {
-        if (err) return console.error(err);
-        res.send(useinfo)
+        if(err) return res.status(404).send(err)
+        res.status(202).send(useinfo)
       })
 }
 
@@ -66,11 +66,11 @@ const changePass = (req,res) => {
         const user = User.findOneAndUpdate({_id:req.user.user_id},{password:req.body.password},function(err){
             if (err) {return console.error(err);}  
         })
-        res.status(200).send("Done");
+        res.status(200).send(user);
     }
     catch(err)
     {
-        res.status(404).send("Fail");
+        res.status(404).send(err);
     }
     
 }
@@ -81,11 +81,11 @@ const changeName = (req,res) => {
             const userUpdated = User.findOneAndUpdate({_id:req.user.user_id},{username:req.body.username},function(err){
                 if (err) {return console.error(err);}
             })
-            res.status(200).send("Done")
+            res.status(200).send(userUpdated)
     }
     catch(err)
     {
-        res.status(404).send("Fail");
+        res.status(404).send(err);
     }
 }
 

@@ -19,6 +19,21 @@
       }
     },
     "paths":{
+      "/health/ping":{
+        "get":{
+          "description":"Check if server is working",
+          "tags":["Health"],
+          "responses":
+          {
+            "200":{
+              "description": "Success"
+            },
+            "404":{
+            "description": "not found"
+            }
+          }
+        }
+      },
       "/user/login":{
         "post":{
           "description":"Change password",
@@ -193,8 +208,7 @@
             }
           }
         }
-      },
-      
+      }, 
       "/user/changePassword":{
         "put":{
           "description":"Change password",
@@ -470,6 +484,41 @@
             "required":true,
             "schema":{
               "$ref":"#/definitions/Dungeon"
+            }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/dungeons/types":{
+        "get":{
+          "description":"Get Dugeons Types",
+          "tags":["Dungeons"],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        },
+        "post":{
+          "description":"Post Dugeons Types",
+          "tags":["Dungeons"],
+          "parameters":[{
+            "in":"body",
+            "name":"body",
+            "description":"Register dungeons types",
+            "required":true,
+            "schema":{
+              "$ref":"#/definitions/DungeonsTypes"
             }
           }],
           "responses":{
@@ -877,6 +926,31 @@
             "required":true
           },
           "ID":{
+            "type":"number",
+            "required":true
+          }
+        }
+      },
+      "DungeonsTypes":{
+        "type":"object",
+        "properties":{
+          "typeDungeon":{
+            "type":"string",
+            "required":true
+          },
+          "DPS":{
+            "type":"number",
+            "required":true
+          },
+          "Healers":{
+            "type":"number",
+            "required":true
+          },
+          "Tanks":{
+            "type":"number",
+            "required":true
+          },
+          "Groups":{
             "type":"number",
             "required":true
           }

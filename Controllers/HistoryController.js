@@ -4,15 +4,15 @@ const getHistoryAll = (req,res) => {
     switch(req.query.extansion){
         case 'all':{
             History.find().exec(function(err,historyInfo){
-                if (err) return console.error(err);
-                res.send(historyInfo)
+                if(err) return res.status(404).send(err)
+                res.status(202).send(historyInfo)
             })
             break;
         }
         default:{
             History.find({Extansion:req.query.extansion}).exec(function(err,historyInfo){
-                if (err) return console.error(err);
-                res.send(historyInfo)
+                if(err) return res.status(404).send(err)
+                res.status(202).send(historyInfo)
             })
         }
     }
@@ -22,16 +22,16 @@ const getHistoryAll = (req,res) => {
 const postHistory = (req,res) => {
     const historyToSaved = new History(req.body)
     historyToSaved.save(function (err) {
-        if (err) {return console.error(err);}
-        res.send(historyToSaved)
+        if(err) return res.status(404).send(err)
+        res.status(202).send(historyToSaved)
     });
 }
 
 const getPatch = (req,res) => {
     // req.params.name
     History.find({Title:req.params.name}).exec(function(err,historyInfo){
-        if (err) return console.error(err);
-        res.send(historyInfo)
+        if(err) return res.status(404).send(err)
+        res.status(202).send(historyInfo)
     })
 }
 

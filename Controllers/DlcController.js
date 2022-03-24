@@ -7,13 +7,13 @@ const getAll = (req,res) => {
     const skip = id>1?((id-1)*nPerPage):0
 
     DLC.find().skip(skip).limit(nPerPage).exec(function (err, dlcInfo) {
-        if (err) return console.error(err);
-        res.send(dlcInfo)
+        if(err) return res.status(404).send(err)
+        res.status(202).send(dlcInfo)
       })
 }
 
 const postDLC = (req,res) => {
-    res.send(req.body)
+    res.status(202).send(req.body)
 }
 
 module.exports = {
