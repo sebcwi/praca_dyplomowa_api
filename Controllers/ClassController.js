@@ -4,10 +4,23 @@ const Skills = require('../Models/Skills')
 
 const getAllClassesByPart = (req,res) => {
     const filter = req.query.part
-    Classes.find({Part:filter}).exec(function (err, classInfo) {
-        if(err) return res.status(404).send(err)
-        res.status(202).send(classInfo)
-      })
+    switch(filter)
+    {
+        case 'all':{
+            Classes.find().sort({Disciplies:-1}).exec(function (err, classInfo) {
+                if(err) return res.status(404).send(err)
+                res.status(202).send(classInfo)
+              })
+            break;
+        }
+        default:{
+            Classes.find({Part:filter}).exec(function (err, classInfo) {
+                if(err) return res.status(404).send(err)
+                res.status(202).send(classInfo)
+              })
+        }
+    }
+    
 }
 
 const getClassesByName = (req,res) => {
@@ -20,10 +33,23 @@ const getClassesByName = (req,res) => {
 
 const getClassSkill = (req,res) => {
     const JobName = req.query.name
-    Skills.find({Class:JobName}).sort({Level:1}).exec(function(err,skillInfo){
-        if(err) return res.status(404).send(err)
-        res.status(202).send(skillInfo)
-    })
+    switch(JobName)
+    {
+        case 'all':{
+            Skills.find().sort({Level:1}).exec(function(err,skillInfo){
+                if(err) return res.status(404).send(err)
+                res.status(202).send(skillInfo)
+            })
+            break;
+        }
+        default:{
+            Skills.find({Class:JobName}).sort({Level:1}).exec(function(err,skillInfo){
+                if(err) return res.status(404).send(err)
+                res.status(202).send(skillInfo)
+            })
+        }
+    }
+    
 }
 
 const postNewSkill = (req,res) => {

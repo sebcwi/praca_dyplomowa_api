@@ -1,6 +1,7 @@
 const { ObjectId } = require('mongodb')
 const User = require('../Models/User')
 const Dungeon = require('../Models/Dungeons')
+const History = require('../Models/History')
 
 const getUsers = (req,res) =>{
     User.find().exec(function (err, useinfo) {
@@ -25,7 +26,13 @@ const deleteDungeons = (req,res) => {
         res.status(202).send(dungInfo)
     })
 }
+const deleteHistories = (req,res) => {
+    History.deleteOne({Patch:req.body.patch}).exec((err,historiesInfo)=>{
+        if(err) return res.status(404).send(err)
+        res.status(202).send(historiesInfo)
+    })
+}
 
 module.exports = {
-    getUsers,deleteUser,deleteDungeons
+    getUsers,deleteUser,deleteDungeons,deleteHistories
 }

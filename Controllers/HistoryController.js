@@ -3,14 +3,14 @@ const History = require('../Models/History')
 const getHistoryAll = (req,res) => {
     switch(req.query.extansion){
         case 'all':{
-            History.find().exec(function(err,historyInfo){
+            History.find().sort({Patch:1}).exec(function(err,historyInfo){
                 if(err) return res.status(404).send(err)
                 res.status(202).send(historyInfo)
             })
             break;
         }
         default:{
-            History.find({Extansion:req.query.extansion}).exec(function(err,historyInfo){
+            History.find({Extansion:req.query.extansion}).sort({Patch:1}).exec(function(err,historyInfo){
                 if(err) return res.status(404).send(err)
                 res.status(202).send(historyInfo)
             })

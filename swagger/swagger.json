@@ -829,6 +829,34 @@
             }
           }
         }
+      },
+      "/admin/histories":{
+        "delete":{
+          "description":"Delete histories by name",
+          "tags":["Admin"],
+          "security": [{ "Bearer": [] }],
+          "parameters":[{
+            "in":"body",
+            "name":"patch",
+            "description":"patch",
+            "schema":{
+              "type":"object",
+              "properties":{
+                "patch":{
+                  "type":"string"
+                }
+              }
+            }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
       }
     },
     "definitions":{
