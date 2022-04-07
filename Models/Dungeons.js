@@ -16,14 +16,8 @@ const dungeonSchema = new mongoose.Schema({
     Icon:{
         type:String,
     },
-    DPS:{
-        type:Number
-    },
-    Healers:{
-        type:Number
-    },
-    Tanks:{
-        type:Number
+    TypeDungeon:{
+        type:String
     }
 })
 

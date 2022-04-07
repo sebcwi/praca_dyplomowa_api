@@ -12,6 +12,15 @@ const getDungeons = (req,res) => {
     })
 }
 
+const getAllDungeons = (req,res) => {
+    
+    // https://xivapi.com/InstanceContent/13?columns=Name,Description,Icon,Banner,ContentFinderCondition.ClassJobLevelRequired,ContentFinderCondition.ContentMemberType
+    Dungeon.find().sort({Level:1}).exec(function(err,dungeonInfo){
+        if(err) return res.status(404).send(err)
+        res.status(202).send(dungeonInfo)
+    })
+}
+
 const postDungeons = (req,res)=>{
    
     const dungeonToSave = new Dungeon(req.body)
@@ -31,5 +40,5 @@ const getDunegonsType = (req,res) => {
 
 
 module.exports = {
-    getDungeons,postDungeons,getDunegonsType
+    getDungeons,postDungeons,getDunegonsType,getAllDungeons
 }

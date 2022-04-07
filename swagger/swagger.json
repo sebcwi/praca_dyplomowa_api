@@ -499,6 +499,18 @@
         }
       },
       "/dungeons":{
+        "get":{
+          "description":"Get all",
+          "tags":["Dungeons"],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        },
         "post":{
           "description":"Register user info",
           "tags":["Dungeons"],
@@ -789,6 +801,34 @@
             }
           }
         }
+      },
+      "/admin/dungeon":{
+        "delete":{
+          "description":"Delete dungeon by name",
+          "tags":["Admin"],
+          "security": [{ "Bearer": [] }],
+          "parameters":[{
+            "in":"body",
+            "name":"name",
+            "description":"name",
+            "schema":{
+              "type":"object",
+              "properties":{
+                "name":{
+                  "type":"string"
+                }
+              }
+            }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
       }
     },
     "definitions":{
@@ -845,18 +885,8 @@
             "type":"string",
             "required":true
           },
-          "DPS":{
-            "type":"number",
-            "required":true
-          }
-          ,
-          "Healers":{
-            "type":"number",
-            "required":true
-          }
-          ,
-          "Tanks":{
-            "type":"number",
+          "TypeDungeon":{
+            "type":"string",
             "required":true
           }
         }
