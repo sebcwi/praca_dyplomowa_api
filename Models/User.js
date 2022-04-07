@@ -23,6 +23,10 @@ const UserSchema = new mongoose.Schema({
     lodestoneID:{
         type:Number,
         required:true
+    },
+    role:{
+        type:String,
+        default:'user'
     }
 
 })

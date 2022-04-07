@@ -5,7 +5,6 @@
   "username": "Gom",
   "password": "e63a41a840af41b6c917f550c072d837cdbb86d2dbf2eaa04c3850ed408ad958",
   "email": "gom@gom.com",
-  "__v": 0,
   "lodestoneID": 23
 },{
   "_id": {
@@ -14,15 +13,5 @@
   "username": "123",
   "password": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
   "email": "sankaros33@gmail.com",
-  "lodestoneID": 24275357,
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "6141defb2912583a8c852f1f"
-  },
-  "username": "gom",
-  "password": "6cd65fa632f1d4292f5b30cab453427034656f94c263a411cacf15eed25ee5e8",
-  "email": "gom@gom.com",
-  "lodestoneID": 24275357,
-  "__v": 0
+  "lodestoneID": 24275357
 }]

@@ -4,7 +4,7 @@
   },
   "Class": "Marauder",
   "Name": "Heavy Swing",
-  "Description": "Delivers an attack with a potency of 200.",
+  "Description": "Zadaje atak o sile 200.",
   "Level": 1,
   "imgURL": "/i/000000/000260_hr1.png",
   "idSkill": 31
@@ -14,7 +14,7 @@
   },
   "Class": "Marauder",
   "Name": "Maim",
-  "Description": "Delivers an attack with a potency of 100.<br/>\n<span style=\"color:#00cc22;\">Combo Action:</span> <span style=\"color:#ff7b1a;\">Heavy Swing</span><br/>\n\n<span style=\"color:#00cc22;\">Combo Potency:</span> 320 <br/>\n<span style=\"color:#00cc22;\">Combo Bonus: </span>Increases <span style=\"color:#ff7b1a;\">Beast Gauge</span> by 10<br/>",
+  "Description": "Zapewnia atak o sile 100<br/>\n<span style=\"color:#00cc22;\">Combo Action:</span> <span style=\"color:#ff7b1a;\">Heavy Swing</span><br/>\n\n<span style=\"color:#00cc22;\">Sila Combo:</span> 320 <br/>\n<span style=\"color:#00cc22;\">Bonus Combo: </span>Increases <span style=\"color:#ff7b1a;\">Beast Gauge</span> by 10<br/>",
   "Level": 4,
   "imgURL": "/i/000000/000255_hr1.png",
   "idSkill": 37
@@ -24,7 +24,7 @@
   },
   "Class": "Marauder",
   "Name": "Berserk",
-  "Description": "Guarantees that all attacks are critical and direct hits.<br/><span style=\"color:#00cc22;\">Duration:</span> 10s <br /><span style=\"color:#00cc22;\">Additional Effect: </span>Extends <span style=\"color:#ff7b1a;\">Storm's Eye</span> duration by 15s to a maximum of 60s",
+  "Description": "Gwarantuje, że wszystkie ataki są trafieniami krytycznymi i bezpośrednimi (direct hits)<br/><span style=\"color:#00cc22;\">Czas:</span> 10s <br /><span style=\"color:#00cc22;\">Dodatkowy effect: </span>Wydłuża czas trwania <span style=\"color:#ff7b1a;\">Storm's Eye</span> 15 s do maksymalnie 60 s",
   "Level": 6,
   "imgURL": "/i/000000/000259_hr1.png",
   "idSkill": 38
@@ -34,7 +34,7 @@
   },
   "Class": "Marauder",
   "Name": "Overpower",
-  "Description": "Delivers an attack with a potency of 130 to all enemies in a cone before you.",
+  "Description": "Zadaje atak o sile 130 wszystkim wrogom w stożku przed tobą.",
   "Level": 10,
   "imgURL": "/i/000000/000254_hr1.png",
   "idSkill": 41
@@ -44,7 +44,7 @@
   },
   "Class": "Marauder",
   "Name": "Thrill of Battle",
-  "Description": "Increases maximum HP by 20% and restores the amount increased.<br/> <span style=\"color:#00cc22;\">Additional Effect: </span>Increases HP recovery via healing actions on self by 20%<br /><span style=\"color:#00cc22;\">Duration:</span> 10s",
+  "Description": "Zwiększa maksymalne HP o 20% i przywraca zwiększoną ilość.<br/> <span style=\"color:#00cc22;\">Dodatkowy effect: </span>Zwiększa regenerację HP poprzez działania leczące na sobie o 20%<br /><span style=\"color:#00cc22;\">Czas:</span> 10s",
   "Level": 30,
   "imgURL": "/i/000000/000263_hr1.png",
   "idSkill": 40
@@ -54,7 +54,7 @@
   },
   "Class": "Marauder",
   "Name": "Storm's Path",
-  "Description": "Delivers an attack with a potency of 100.<br/><span style=\"color:#00cc22;\">Combo Action:</span> <span style=\"color:#ff7b1a;\">Maim</span><br/><span style=\"color:#00cc22;\">Combo Potency:</span> 420<br/><span style=\"color:#00cc22;\">Combo Bonus:</span> Restores own HP<br/><span style=\"color:#00cc22;\">Cure Potency: </span>250 <br /><span style=\"color:#00cc22;\">Combo Bonus:</span> Increases <span style=\"color:#ff7b1a;\">Beast Gauge</span> by 20",
+  "Description": "Zadaje atak o sile 100.<br/><span style=\"color:#00cc22;\">Combo Action:</span> <span style=\"color:#ff7b1a;\">Maim</span><br/><span style=\"color:#00cc22;\">Sila combo:</span> 420<br/><span style=\"color:#00cc22;\">Combo Bonus:</span> Przywraca własne HP<br/><span style=\"color:#00cc22;\">Sila Cura: </span>250 <br /><span style=\"color:#00cc22;\">Bonus comba:</span> Zwiększa <span style=\"color:#ff7b1a;\">Beast Gauge</span> o 20",
   "Level": 26,
   "imgURL": "/i/000000/000258_hr1.png",
   "idSkill": 42

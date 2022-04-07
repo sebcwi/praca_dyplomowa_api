@@ -19,6 +19,7 @@ const historyRoutes = require('./Routes/HistoryRoutes')
 const FileRoutes = require('./Routes/FilesRoutes')
 const NewsRoutes = require('./Routes/NewsRoutes')
 const EventRoutes = require('./Routes/EventRoutes')
+const AdminRoutes = require('./Routes/AdminRoutes')
 
 const mongDB = require('./DB/mongoose')
 const swagerOption = require('./swagger/swagger.json')
@@ -40,6 +41,7 @@ app.use('/history',historyRoutes)
 app.use('/file',FileRoutes)
 app.use('/news',NewsRoutes)
 app.use('/events',EventRoutes)
+app.use('/admin',AdminRoutes)
 
 
 

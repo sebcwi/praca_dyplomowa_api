@@ -98,6 +98,32 @@
           }
         }
       },
+      "/character/{id}":{
+        "get":{
+          "description": "Get info of FF character",
+          "tags": ["User"],
+          "parameters":[
+            {
+              "name":"id",
+              "in":"path",
+              "desciption":"ID",
+              "required":true,
+              "schema":{
+                "type":"string"
+              }
+            }
+        ],
+          "responses":
+          {
+            "200":{
+              "description": "Success"
+            },
+            "404":{
+            "description": "not found"
+            }
+          }
+        }
+      },
       "/data/servers":{
         "get":{
           "description":"Get all servers",
@@ -309,7 +335,6 @@
         "get":{
           "description":"Get classs skill by name",
           "tags":["Class"],
-          "security": [{ "Bearer": [] }],
           "parameters":[{
             "in":"query",
             "name":"name",
@@ -334,6 +359,7 @@
         "post":{
           "description":"Get classs skill by name",
           "tags":["Class"],
+          "security": [{ "Bearer": [] }],
           "parameters":[{
             "in":"body",
             "name":"body",
@@ -357,7 +383,6 @@
         "get":{
           "description":"Get all class tutorials by name",
           "tags":["Tutorial"],
-          "security": [{ "Bearer": [] }],
           "parameters":[{
             "in":"query",
             "name":"name",
@@ -380,6 +405,7 @@
         "post":{
           "description":"Post new Tutorial",
           "tags":["Tutorial"],
+          "security": [{ "Bearer": [] }],
           "parameters":[{
             "in":"body",
             "name":"body",
@@ -562,7 +588,6 @@
         "get":{
           "description":"Get all info about patch",
           "tags":["History"],
-          "security": [{ "Bearer": [] }],
           "parameters":[{
             "in":"query",
             "name":"extansion",
@@ -585,6 +610,7 @@
         "post":{
           "description":"Get all info about patch",
           "tags":["History"],
+          "security": [{ "Bearer": [] }],
           "parameters":[{
             "in":"body",
             "name":"body",
@@ -680,7 +706,6 @@
         "get":{
           "description":"Get all events",
           "tags":["Events"],
-          "security": [{ "Bearer": [] }],
           "parameters":[{
             "in":"query",
             "name":"part",
@@ -703,6 +728,7 @@
         "post":{
           "description":"Register Event",
           "tags":["Events"],
+          "security": [{ "Bearer": [] }],
           "parameters":[{
             "in":"body",
             "name":"body",
@@ -710,6 +736,48 @@
             "required":true,
             "schema":{
               "$ref":"#/definitions/Event"
+            }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/admin/users":{
+        "get":{
+          "description":"Get all users",
+          "tags":["Admin"],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/admin/user":{
+        "delete":{
+          "description":"Delete users by id",
+          "tags":["Admin"],
+          "security": [{ "Bearer": [] }],
+          "parameters":[{
+            "in":"body",
+            "name":"email",
+            "description":"email",
+            "schema":{
+              "type":"object",
+              "properties":{
+                "email":{
+                  "type":"string"
+                }
+              }
             }
           }],
           "responses":{

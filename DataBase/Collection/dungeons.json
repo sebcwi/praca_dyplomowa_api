@@ -3,133 +3,111 @@
     "$oid": "61266bd44f08c74d3cafab7b"
   },
   "Banner": "/i/112000/112001.png",
-  "DPS": 2,
-  "Description": "After a period of relative silence following the Calamity, the Serpent Reavers have once again taken to terrorizing the inland hamlets of La Noscea─killing the men, kidnapping the women and children, plundering the storehouses, and burning what little they leave behind. For years, it was not known how the pirates were able to raid areas so far from the coast, until a local shepherd sighted a band of painted ruffians entering the Sastasha Seagrot, carrying large quantities of sacks and crates. Could it be that there is more to this cave than meets the eye?",
-  "Healers": 1,
+  "Description": "Po okresie względnej ciszy po kataklizmie, Serpent Reavers ponownie zaczęli terroryzować śródlądowe wioski La Noscea, zabijając mężczyzn, porywając kobiety i dzieci, plądrując magazyny i paląc to, co pozostawili po sobie. Przez lata nie było wiadomo, w jaki sposób piraci mogli najeżdżać tereny tak odległe od wybrzeża, dopóki miejscowy pasterz nie zauważył bandy pomalowanych łotrów wchodzących do Sastasha Seagrot, niosących duże ilości worków i skrzyń. Czy to możliwe, że w tej jaskini jest coś więcej niż na pierwszy rzut oka?",
   "Icon": "/i/061000/061801.png",
   "Level": 15,
   "Name": "Sastasha",
-  "Tanks": 1
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6132103ab43fbaecb4f42280"
   },
   "Banner": "/i/112000/112002.png",
-  "DPS": 2,
-  "Description": "Since its establishment during Gelmorran times, this subterranean crypt has been used for generations as a final resting place for the remains of rulers and nobles. Since the Calamity, however, the tunnels have become overrun with the Lambs of Dalamud─a deadly cult who worships the now-fallen satellite as their savior. It is in the Deepcroft that these twisted souls silently plot revenge against those who fought to prevent the advent of Dalamud, summoning any dark presence who will aid them to this end...no matter what the cost.",
-  "Healers": 1,
+  "Description": "Od momentu powstania w czasach Gelmorran, ta podziemna krypta była używana od pokoleń jako miejsce ostatniego spoczynku szczątków władców i szlachty. Jednak od czasu nieszczęścia tunele zostały opanowane przez śmiertelną kult Baranków Dalamud─, którzy czczą teraz upadłego satelitę jako swojego zbawiciela. To właśnie w Deepcrofcie te pokręcone dusze po cichu planują zemstę na tych, którzy walczyli, by zapobiec nadejściem Dalamuda, przyzywając każdą mroczną obecność, która pomoże im w tym celu… bez względu na koszty.",
   "Icon": "/i/061000/061801.png",
   "Level": 16,
   "Name": "The Tam–Tara Deepcroft",
-  "Tanks": 1
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "61321087b43fbaecb4f42281"
   },
   "Banner": "/i/112000/112003.png",
-  "DPS": 2,
-  "Description": "Abandoned once purged of ore, Copperbell Mines lay untouched for nigh on three centuries until Amajina & Sons Mineral Concern reclaimed the shafts─the guild's sights set on expanding the mines downward in an attempt to tap yet undiscovered veins of valuable metal. Unfortunately, it was not riches the powder kegs uncovered, but sheer terror, for when the smoke cleared, out poured an army of raging giants from the darkest recesses of the mines. The hecatoncheires─thralls of the lost Thorne Dynasty─were, at last, free from their lightless prison, three hundred years of hate fueling their madness.",
-  "Healers": 1,
+  "Description": "Opuszczone niegdyś oczyszczone z rudy, Copperbell Mines leżały nietknięte przez prawie trzy stulecia, dopóki firma Amajina & Sons Mineral Concern nie odzyskała szybów — celami gildii było poszerzenie kopalni w dół, próbując wykorzystać jeszcze nieodkryte żyły cennego metalu. Niestety, nie były to bogactwa odkryte w beczkach z prochem, ale zwykłe przerażenie, bo kiedy dym się rozwiał, armia szalejących olbrzymów wylała się z najciemniejszych zakamarków kopalni. Hecatoncheires — niewolnicy zaginionej dynastii Thorne — w końcu uwolnili się z pozbawionego światła więzienia, trzysta lat nienawiści napędzającej ich szaleństwo.",
   "Icon": "/i/061000/061801.png",
   "Level": 17,
   "Name": "Copperbell Mines",
-  "Tanks": 1
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "61321284b43fbaecb4f42282"
   },
   "Banner": "/i/112000/112004.png",
-  "DPS": 2,
-  "Description": "Originally a holy place for the first Lalafell arrived in Eorzea, the twisting labyrinth of natural caverns which wind through this massive mesa was transformed by the Gladiators' Guild into a series of training pits, animal pens, and holding cells to accommodate the ever-growing popularity of Ul'dah's Coliseum. After the Calamity, however, the location was abandoned─those remaining in the pens, left for dead. Not all of them, however, met that fate, and now the tunnels are rife with those who survived...as well as the tormented spirits of those who did not.",
-  "Healers": 1,
+  "Description": "Pierwotnie święte miejsce dla pierwszego Lalafell przybyło do Eorzei, kręty labirynt naturalnych jaskiń, które wiją się przez ten ogromny płaskowyż, został przekształcony przez Gildię Gladiatorów w szereg dołów treningowych, zagrod dla zwierząt i cel, aby pomieścić stale rosnącą popularność Koloseum Ul'dah. Jednak po Katastrofie miejsce zostało porzucone – ci, którzy pozostali w zagrodach, pozostawieni na śmierć. Nie wszystkich jednak spotkał ten los, a teraz w tunelach roi się od tych, którzy przeżyli... a także udręczonych duchów tych, którzy tego nie zrobili.",
   "Icon": "/i/061000/061801.png",
   "Level": 20,
   "Name": "Halatali",
-  "Tanks": 1
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "613212d5b43fbaecb4f42283"
   },
   "Banner": "/i/112000/112005.png",
-  "DPS": 2,
-  "Description": "Named after a man-eating creature from Padjali folklore, the Thousand Maws of Toto-Rak was built on the site of a natural cave system beneath Silent Arbor. Until recently, it held all of Gridania's foulest criminals, from arsonists to poachers, but the completion of a new gaol closer to the city heralded its abandonment.",
-  "Healers": 1,
+  "Description": "Nazwany na cześć ludożerczego stworzenia z folkloru Padjalego, Tysiąc Paszcz Toto-Rak został zbudowany w miejscu naturalnego systemu jaskiń pod Cichą Altanką. Do niedawna przetrzymywano w nim wszystkich najgorszych przestępców Gridanii, od podpalaczy po kłusowników, ale ukończenie nowego więzienia bliżej miasta zwiastowało jego porzucenie.",
   "Icon": "/i/061000/061801.png",
   "Level": 24,
   "Name": "the Thousand Maws of Toto–Rak",
-  "Tanks": 1
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6132130ab43fbaecb4f42284"
   },
   "Banner": "/i/112000/112006.png",
-  "DPS": 2,
-  "Description": "Once used by Seedseers as a place for spiritual reflection and meditation, Haukke Manor was long frowned upon by the people of Gridania as a symbol of excess. After years of protest, the building was finally sold to a wealthy Wildwood Elezen by the name of Lady Amandine.\\n\\n\\n\\nWhile little is known of the lady, it was said that she was exceptionally vain, and that to maintain her impeccable beauty, she would spare no expense. From facial creams concocted from rare Coerthan honeys to shampoos derived from the milk of exotic phurbles, her daily ritual of beauty treatments escalated until it was rumored she was bathing in the blood of her virgin maidservants. No amount of man-made tinctures, however, could hide the hideous scars she eventually suffered during the Calamity, and soon she was forced to turn to a darker solution, signing away her very soul in a final effort to literally “save face.”",
-  "Healers": 1,
+  "Description": "Posiadłość Haukke, niegdyś wykorzystywana przez Seedseers jako miejsce duchowej refleksji i medytacji, od dawna była postrzegana przez mieszkańców Gridanii jako symbol nadmiaru. Po latach protestów budynek został ostatecznie sprzedany bogatemu Wildwood Elezen o imieniu Lady Amandine. Choć niewiele wiadomo o damie, mówiono, że była wyjątkowo próżna i aby zachować nieskazitelną urodę, nie szczędziłaby wydatków. Od kremów do twarzy wytwarzanych z rzadkich miodów Coerthan po szampony na bazie mleka egzotycznych phurble, jej codzienny rytuał zabiegów pielęgnacyjnych nasilał się, aż pojawiły się pogłoski, że kąpie się we krwi swoich dziewiczych pokojówek. Żadna ilość wytworzonych przez człowieka nalewek nie była jednak w stanie ukryć ohydnych blizn, które w końcu doznała podczas nieszczęścia, i wkrótce została zmuszona do skorzystania z mrocznego rozwiązania, oddając swoją duszę w ostatecznym wysiłku, by dosłownie „ocalić twarz”.",
   "Icon": "/i/061000/061801.png",
   "Level": 28,
   "Name": "Haukke Manor",
-  "Tanks": 1
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "61321377b43fbaecb4f42285"
   },
   "Banner": "/i/112000/112007.png",
-  "DPS": 2,
-  "Description": "After a tiring journey across Eorzea, it is deep within the quiet jungles of Raincatcher Gully where the charismatic and enterprising young goblin, Brayflox Alltalks, chooses to build her tiny empire. What she does not realize, however, is that something else─something sinister─has also made the lush forest its home. Now driven from their rightful(?) claim, Brayflox and her brethren seek to retake the land, and are not above asking the help of lesser races (that would be you) to help them do so.",
-  "Healers": 1,
+  "Description": "Po męczącej podróży po Eorzei znajduje się głęboko w cichych dżunglach Raincatcher Gully, gdzie charyzmatyczny i przedsiębiorczy młody goblin, Brayflox Alltalks, postanawia zbudować swoje maleńkie imperium. Nie zdaje sobie jednak sprawy, że coś innego – coś złowrogiego – również uczyniło z bujnego lasu swój dom. Teraz, wygnani ze swoich prawowitych (?) roszczeń, Brayflox i jej bracia starają się odzyskać ziemię i nie wahają się prosić o pomoc pomniejszych ras (to znaczy ty), aby im w tym pomogły.",
   "Icon": "/i/061000/061801.png",
   "Level": 32,
   "Name": "Brayflox's Longstop",
-  "Tanks": 1
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "613213b4b43fbaecb4f42286"
   },
   "Banner": "/i/112000/112009.png",
-  "DPS": 2,
-  "Description": "Under the unforgiving Thanalan sun lie the ruins of an ancient temple half-devoured by the shifting sands of a timeless desert. Though used by ancient Belah'dians as a place to worship the sun goddess, Azeyma, portions of the massive underground structure appear to be far older than this Sixth Astral Era civilization. That, however, did not deter Belah'dian sultans from each adding their own chambers to the original construct in a bid to achieve immortality through creation. In the subsequent years since the fall of Belah'dia, many an adventurer has sought to explore the temple's mysteries and perhaps return with the treasure of a lost era...only to fall victim to one of the complex traps set to prevent that very thing from happening.",
-  "Healers": 1,
+  "Description": "Pod bezlitosnym słońcem Thanalan leżą ruiny starożytnej świątyni na wpół pochłonięte przez ruchome piaski ponadczasowej pustyni. Choć używane przez starożytnych Belah'dian jako miejsce kultu bogini słońca, Azeymy, fragmenty masywnej podziemnej struktury wydają się być znacznie starsze niż cywilizacja z Szóstej Ery Astralnej. To jednak nie powstrzymało sułtanów Belah'dian od dodawania własnych komnat do oryginalnego konstruktu w celu osiągnięcia nieśmiertelności poprzez stworzenie. W kolejnych latach po upadku Belah'dii wielu poszukiwaczy przygód próbowało zgłębić tajemnice świątyni i być może powrócić ze skarbem minionej epoki… tylko po to, by paść ofiarą jednej ze skomplikowanych pułapek zastawionych, by temu zapobiec. coś się dzieje.",
   "Icon": "/i/061000/061801.png",
   "Level": 35,
   "Name": "The Sunken Temple of Qarn",
-  "Tanks": 1
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "61321412b43fbaecb4f42287"
   },
   "Banner": "/i/112000/112011.png",
-  "DPS": 2,
-  "Description": "Near an old mountain path once used by Sixth Astral Era woodcutters as a detour through the more perilous stretches of northern Thanalan, lies a cave sought out only by the ignorant or the foolish. Upon first glance, the shade of its maw might appear inviting to one who seeks to escape the punishing rays of the midday sun. However, any good woodcutter knows to keep his distance, for it is said that those who enter never return─the cries of the damned echoing up from the depths the only testament to their folly. Heed this dire warning, and you may live. Ignore it, and soon it shall be your screams that add to the cacophony.",
-  "Healers": 1,
+  "Description": "W pobliżu starej górskiej ścieżki, używanej niegdyś przez drwali z Szóstej Ery Astralnej, jako objazd przez bardziej niebezpieczne odcinki północnego Thanalan, leży jaskinia poszukiwana tylko przez ignorantów lub głupców. Na pierwszy rzut oka cień jego paszczy może wydawać się zachęcający dla kogoś, kto szuka ucieczki przed karzącymi promieniami południowego słońca. Jednak każdy dobry drwal umie trzymać się na dystans, ponieważ mówi się, że ci, którzy wchodzą, nigdy nie wracają — krzyki potępionych odbijające się echem z głębin są jedynym świadectwem ich szaleństwa. Zważ na to straszne ostrzeżenie, a możesz żyć. Zignoruj to, a wkrótce to twoje krzyki dodadzą kakofonii.",
   "Icon": "/i/061000/061801.png",
   "Level": 38,
   "Name": "Cutter's Cry",
-  "Tanks": 1
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "61321457b43fbaecb4f42288"
   },
   "Banner": "/i/112000/112012.png",
-  "DPS": 2,
-  "Description": "One of four watchtowers built along the Sea of Clouds by the city–state of Ishgard, the Stone Vigil was overrun and occupied by the Dravanian Horde not long after the Calamity. The following years have seen the knights of House Durendaire make several attempts at reclaiming the fortress, but to no avail. What could it be that thwarts their every effort?",
-  "Healers": 1,
+  "Description": "Jedna z czterech wież strażniczych zbudowanych wzdłuż Morza Chmur przez miasto-państwo Ishgard, Kamienna Czuwa została najechana i zajęta przez hordę Dravanii niedługo po katastrofie. W następnych latach rycerze z rodu Durendaire podjęli kilka prób odzyskania fortecy, ale bezskutecznie. Co takiego może udaremnić ich każdy wysiłek?",
   "Icon": "/i/061000/061801.png",
   "Level": 41,
   "Name": "The Stone Vigil",
-  "Tanks": 1
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "61321492b43fbaecb4f42289"
   },
   "Banner": "/i/112000/112013.png",
-  "DPS": 2,
-  "Description": "Seeking to utilize an existing labyrinth of natural caves, the Ishgardian house of Dzemael began construction on their eponymous Darkhold near the end of the Sixth Astral Era, intending it to serve as a refuge for those fleeing the flames of the Dravanian Horde. When the house's digging uncovered an entrance to the void, allowing an army of voidsent into this realm, however, they immediately abandoned their plans and withdrew from the subterrane, sealing it off so that they might contain the otherworldly invaders within. Despite all this, the house is unwilling to relinquish its claim to the caves, and believes that if they can be cleared of the voidsent, they might still be able to see their original plan brought to fruition.",
-  "Healers": 1,
+  "Description": "Chcąc wykorzystać istniejący labirynt naturalnych jaskiń, Ishgardiański dom Dzemaela rozpoczął budowę swojej tytułowej Mrocznej Twierdzy pod koniec Szóstej Ery Astralnej, zamierzając służyć jako schronienie dla tych, którzy uciekają przed płomieniami Dravanii. Kiedy kopanie domu odsłoniło wejście do pustki, pozwalając armii pustki wysłanej do tego królestwa, jednak natychmiast porzucili swoje plany i wycofali się z podziemi, zamykając je, aby mogli zatrzymać w sobie najeźdźców z innego świata. Mimo to dom nie chce zrzec się swoich praw do jaskiń i wierzy, że jeśli uda im się oczyścić je z pustki, mogą nadal być w stanie zobaczyć, jak ich pierwotny plan zostanie zrealizowany.",
   "Icon": "/i/061000/061801.png",
   "Level": 44,
   "Name": "Dzemael Darkhold",
-  "Tanks": 1
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138bdf6f3d31e4e20c32cfe"
@@ -138,11 +116,8 @@
   "Icon": "/i/061000/061801.png",
   "Level": 47,
   "Name": "the Aurum Vale",
-  "Description": "Soon after its discovery, miners from across the realm flocked to the Aurum Vale, driven by rumors that deep within lay endless veins of mythril. What they found instead was gold, but not the sort which would make them rich. Believing the substance precious aurum, miners unknowingly stumbled into deep pools of glowing venom thereafter known as goldbile. Not only did the liquid burn their skin, but the noisome fumes given off by the foul ooze cooked their lungs when inhaled, bringing on a quick, yet excruciating death. These truths, however, have done little to prevent new miners from braving the suffocating shafts, now even more driven to find what those who entered before could not.",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Wkrótce po jego odkryciu górnicy z całego królestwa przybyli do Doliny Aurum, kierując się plotkami, które głęboko w niej kryją niekończące się żyły mitrilu. Zamiast tego znaleźli złoto, ale nie takie, które uczyniłoby ich bogatymi. Wierząc, że substancja jest cennym aurum, górnicy nieświadomie natknęli się na głębokie kałuże jarzącego się jadu znanego później jako żółć złota. Ciecz nie tylko spaliła ich skórę, ale także hałaśliwe opary wydzielane przez cuchnący szlam gotowały im płuca podczas wdychania, powodując szybką, ale straszliwą śmierć. Prawdy te jednak niewiele zrobiły, aby powstrzymać nowych górników przed stawianiem czoła duszącym się szybom, teraz jeszcze bardziej zdeterminowanym, by znaleźć to, czego nie mogli zdobyć ci, którzy weszli wcześniej.",
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138be49f3d31e4e20c32d02"
@@ -151,11 +126,8 @@
   "Icon": "/i/061000/061801.png",
   "Level": 50,
   "Name": "the Wanderer's Palace",
-  "Description": "Decades of kobold mining deep beneath O'Ghomoro gradually weakened upper La Noscea to the point that when the Calamity struck, the land surrounding Bronze Lake collapsed, draining its waters and revealing a palace of unparalleled beauty. Thought to have been built by the Nymian civilization, which thrived in the area some fifteen centuries ago, the palace appears to have been dedicated to their patron deity, Oschon, the Wanderer. In search of the bounty she may hold, treasure hunters have already begun to delve into this forsaken place...but will treasure be the only thing they find?",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Dziesięciolecia wydobycia koboldów głęboko pod O'Ghomoro stopniowo osłabiały górną część La Noscea do tego stopnia, że kiedy uderzyła Katastrofa, ziemia otaczająca Jezioro Brązowe zawaliła się, osuszając jego wody i odsłaniając pałac o niezrównanej urodzie. Uważany, że został zbudowany przez cywilizację Nymów, która kwitła na tym obszarze jakieś piętnaście wieków temu, pałac wydaje się być poświęcony ich bóstwu opiekuńczemu, Oschonowi, Wędrowcowi. W poszukiwaniu nagrody, którą może posiadać, poszukiwacze skarbów już zaczęli zagłębiać się w to opuszczone miejsce... ale czy skarb będzie jedyną rzeczą, jaką znajdą?",
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138be7df3d31e4e20c32d04"
@@ -164,11 +136,8 @@
   "Icon": "/i/061000/061801.png",
   "Level": 50,
   "Name": "Castrum Meridianum",
-  "Description": "So begins the third phase of Operation Archon, which entails a frontal assault upon Castrum Meridianum, Gaius van Baelsar's seat of power. Forming the main thrust, the Immortal Flames will strike at the stronghold with all their strength, though this is but a feint. While the garrison's eyes are drawn outwards, you and your comrades must steal past its defenses and attempt to deactivate the magitek field which protects the Praetorium, the fortress within a fortress wherein the Ultima Weapon is believed to be housed.",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Tak zaczyna się trzecia faza Operacji Archon, która obejmuje frontalny atak na Castrum Meridianum, siedzibę władzy Gaiusa van Baelsara. Tworząc główne uderzenie, Nieśmiertelne Płomienie uderzą w twierdzę z całej siły, choć jest to tylko zwód. Podczas gdy oczy garnizonu są skierowane na zewnątrz, ty i twoi towarzysze musicie przekraść się przez jego obronę i spróbować dezaktywować pole magiteka, które chroni Praetorium, fortecę w twierdzy, w której, jak się uważa, znajduje się broń Ultima.",
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138beb2f3d31e4e20c32d06"
@@ -177,11 +146,8 @@
   "Icon": "/i/061000/061801.png",
   "Level": 50,
   "Name": "the Praetorium",
-  "Description": "With the magitek field now out of commission, the path to the Ultima Weapon lies open. While the Immortal Flames sweep Castrum Meridianum and suppress the remnants of the enemy garrison, you and your comrades must fight your way to the innermost sector of the Praetorium, there to locate and destroy the Ultima Weapon. Cid's airship, the Enterprise, will bear you to the stage of the final confrontation.",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Teraz, gdy pole magiteka nie działa, droga do broni Ultima stoi otworem. Podczas gdy Nieśmiertelne Płomienie omiatają Castrum Meridianum i tłumią resztki wrogiego garnizonu, ty i twoi towarzysze musicie wywalczyć sobie drogę do najgłębszego sektora Praetorium, aby tam zlokalizować i zniszczyć broń Ultima. Statek powietrzny Cida, Enterprise, zabierze cię do etapu ostatecznej konfrontacji.",
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138bf27f3d31e4e20c32d0a"
@@ -190,11 +156,8 @@
   "Icon": "/i/061000/061801.png",
   "Level": 50,
   "Name": "Amdapor Keep",
-  "Description": "Once, the lost civilization of Amdapor thrived in the Twelveswood, her citizens wielders of powerful, yet forbidden magicks which could be used to alter the very fabric of existence. However, as is oft the case with peoples who fancy themselves gods, the self-assuring hubris of the Amdapori eventually became their downfall, and as quickly as they rose to power, did they disappear from the world. For generations, this relic of their once-mighty civilization has remained hidden in plain sight─cloaked by the elementals who sought only to prevent newer generations from stumbling across the ancient Amdapori magicks. That is, until the Lambs of Dalamud─a dark cult who worships the now-fallen lesser moon as a god─dispelled the elementals' glamour by means unknown, and claimed the keep as their own. Now the crazed followers use its ancient chambers to perform blood sacrifices in an effort to resurrect their evil lord.",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Kiedyś zagubiona cywilizacja Amdapor kwitła w Dwunastym Lesie, jej obywatele dzierżyli potężną, ale zakazaną magię, której można było użyć do zmiany samej struktury egzystencji. Jednak, jak to często bywa z ludami, które uważają się za bogów, pewna siebie arogancja Amdapori w końcu stała się ich upadkiem i tak szybko, jak doszli do władzy, zniknęli ze świata. Od pokoleń ten relikt ich niegdyś potężnej cywilizacji pozostawał ukryty na widoku – zamaskowany przez żywiołaki, które starały się jedynie zapobiec natknięciu się nowych pokoleń na starożytną magię Amdapori. Tak było do czasu, gdy Baranki z Dalamud – mroczny kult, który czci teraz upadły pomniejszy księżyc jako boga – nie rozwiały uroku żywiołaków w nieznany sposób i uznały twierdzę za swoją. Teraz szaleni wyznawcy używają jego starożytnych komnat do składania krwawych ofiar, aby wskrzesić złego pana.",
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138bf77f3d31e4e20c32d0c"
@@ -203,11 +166,8 @@
   "Icon": "/i/061000/061801.png",
   "Level": 50,
   "Name": "Pharos Sirius",
-  "Description": "The once-proud Pharos Sirius is twice dishonored─once by the Calamity, and now by the deadly siren of Umbra, who plots to hold the lighthouse as a personal stronghold with the aid of her minions. Silence her lunatic song, dispatch the usual suspects─ashkin and winged monstrosities─and reclaim the light of the civilized world.",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Niegdyś dumny Pharos Syriusz został dwukrotnie zhańbiony – raz przez nieszczęście, a teraz przez śmiertelną syrenę Umbra, która z pomocą swoich sług knuje, by utrzymać latarnię morską jako osobistą twierdzę. Ucisz jej szaloną pieśń, wyeliminuj zwykłych podejrzanych – aszkinów i skrzydlatych potworów – i odzyskaj światło cywilizowanego świata.",
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138bfd1f3d31e4e20c32d0e"
@@ -216,11 +176,8 @@
   "Icon": "/i/061000/061801.png",
   "Level": 50,
   "Name": "Copperbell Mines (Hard)",
-  "Description": "Huzzah, back to the mines! Adventurers have cleared Copperbell Mines of hecatoncheires─or have they? A band of engineers from Amajina & Sons has gone missing in the deep shaft, cut off mid-knock: “ON SCHEDULE. HELP HEC─”. A more thorough adventurer is needed to mop up the enduring giants, if pickaxes are to ring again underground and the gil to flow overground.",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Huzzah, wracaj do kopalni! Poszukiwacze przygód oczyścili kopalnie Copperbell z hekatoncheires, a może tak? Zespół inżynierów z Amajina & Sons zaginął w głębokim szybie, odcięty w połowie uderzenia: „NA HARMONOGRAMIE. POMÓŻ HEC─”. Potrzebny jest bardziej dokładny poszukiwacz przygód, aby zmieść trwałe olbrzymy, jeśli kilofy mają znowu dzwonić pod ziemią, a gil przepływać nad ziemią.",
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138c005f3d31e4e20c32d10"
@@ -229,11 +186,8 @@
   "Icon": "/i/061000/061801.png",
   "Level": 50,
   "Name": "Haukke Manor (Hard)",
-  "Description": "Scarred by the Calamity and warped by vanity, the lady of House Dartancours has made a bargain with the voidsent─and lost her soul, as is so often the case with such sketchy arrangements. Now, her manor house is a lair to all manner of dark beings, and the elite band of Wood Wailers sent to purge them has failed to report back. A second try is now in the works.",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Oszpecona nieszczęściem i wypaczona próżnością, dama z domu Dartancours zawarła umowę z pustką – i straciła swoją duszę, jak to często bywa w przypadku takich szkicowych aranżacji. Teraz jej dwór jest kryjówką dla wszelkiego rodzaju mrocznych istot, a elitarna grupa Wood Wailers wysłanych, by je oczyścić, nie zgłosiła się. Trwają prace nad drugą próbą.",
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138c05ef3d31e4e20c32d12"
@@ -242,11 +196,8 @@
   "Icon": "/i/061000/061801.png",
   "Level": 50,
   "Name": "the Lost City of Amdapor",
-  "Description": "Born in magic, the ancient city of Amdapor lived in splendor and died in agony. As the Fifth Astral Era gave way to the Sixth Umbral and the ensuing catastrophe, the agent of Amdapor's destruction slept. Now, the seal that has held so long is softening like windfallen fruit─and what blind worms writhe underneath the skin of the dead city?",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Urodzone w magii starożytne miasto Amdapor żyło w przepychu i zmarło w agonii. Gdy Piąta Era Astralna ustąpiła miejsca Szóstemu Umbralowi i następującej po nim katastrofie, agent zniszczenia Amdaporu spał. Teraz pieczęć, która przetrwała tak długo, mięknie jak opadły owoc – a jakie ślepe robaki wiją się pod skórą martwego miasta?",
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138c0ebf3d31e4e20c32d14"
@@ -255,11 +206,8 @@
   "Icon": "/i/061000/061801.png",
   "Level": 50,
   "Name": "Halatali (Hard)",
-  "Description": "Halatali! The very name turns some spines to water and others to steel. Lurid marks of the recent lawlessness yet remain, but daily the drudges conquer halls slick with ichor and doorways festooned with things not for gentle eyes. No less deadly for its newly restored order, the fabled training grounds yearn for new blood─perhaps to brighten the freshly scrubbed walls of its vast chambers.",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Halatali! Już sama nazwa zamienia jedne kolce w wodę, a inne w stal. Pozostają jeszcze wstrętne ślady niedawnego bezprawia, ale sługusy codziennie zdobywają sale śliskie od posoki i drzwi obwieszone rzeczami nie dla łagodnych oczu. Nie mniej zabójcze dla nowo przywróconego porządku, legendarne tereny treningowe tęsknią za nową krwią – być może po to, by rozjaśnić świeżo wyszorowane ściany jego ogromnych komnat.",
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138c1e6f3d31e4e20c32d1b"
@@ -268,11 +216,8 @@
   "Icon": "/i/061000/061801.png",
   "Level": 50,
   "Name": "Brayflox's Longstop (Hard)",
-  "Description": "Brayflox's Longstop is overrun with forces of the Illuminati; the furious goblin scholars are bent on recovering a secret recipe centuries in the making and a moment in the filching. Having been pressed into service as Brayflox's boon companion, you have no choice but to disregard the facts of her thievery and defend the Longstop from all those who would seize it from its rightful holder.",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Longstop Brayfloxa zostaje opanowany przez siły Iluminatów; wściekli uczeni goblinów są zdeterminowani, aby odzyskać tajemniczy przepis, który trwał wieki i przez całe stulecia łowił. Po wezwaniu do służby jako dobrodziejski towarzysz Brayfloxa, nie masz innego wyjścia, jak zignorować fakty jej kradzieży i bronić Longstop przed wszystkimi, którzy chcieliby odebrać go prawowitemu właścicielowi.",
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138c20df3d31e4e20c32d1d"
@@ -281,11 +226,8 @@
   "Icon": "/i/061000/061801.png",
   "Level": 50,
   "Name": "Hullbreaker Isle",
-  "Description": "Upon the Rhotano Sea, along the fringes of the island chain known as the Cieldalaes, there stretches an expanse of water perpetually covered in heavy mist. Hidden within this impenetrable shroud is Hullbreaker Isle, so named for having smashed innumerable hapless vessels into flotsam over the centuries. In the wake of the Calamity, however, it came to be that the mist would lift under certain conditions. On one such day, a merchantman sailed into the area to behold not only the isle itself, but also the wreck of the Haar, the flagship of the dread pirate Mistbeard. The discovery has rekindled interest in Mistbeard's legendary hoard, and treasure hunters the realm over are now scrambling to find passage to the elusive isle.",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Na Morzu Rhotano, wzdłuż obrzeży łańcucha wysp znanego jako Cieldalaes, rozciąga się bezmiar wody, wiecznie pokryty gęstą mgłą. W tym nieprzeniknionym całunie ukryta jest wyspa Hullbreaker Isle, nazwana tak ze względu na to, że przez stulecia rozbijała niezliczone nieszczęsne statki w szczątki. Jednak w następstwie nieszczęścia mgła podniosła się w określonych warunkach. Pewnego dnia statek handlowy wpłynął na ten obszar, aby zobaczyć nie tylko samą wyspę, ale także wrak Haar, okręt flagowy przerażającego pirata Mistbearda. Odkrycie ponownie wzbudziło zainteresowanie legendarnym skarbem Mistbearda, a poszukiwacze skarbów z całego królestwa starają się znaleźć przejście na nieuchwytną wyspę.",
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138c259f3d31e4e20c32d1f"
@@ -294,11 +236,8 @@
   "Icon": "/i/061000/061801.png",
   "Level": 50,
   "Name": "the Tam–Tara Deepcroft (Hard)",
-  "Description": "When the guiding light of one's life is extinguished, it takes uncommon strength of spirit to clamber out of the black pits of despair. Those who want for resilience may yet be pulled up by a friend's helping hand, but what becomes of a broken-hearted maiden who has neither the strength nor the succor to overcome the darkness that threatens to consume her? The answer shall be revealed through the tragic tale that begins with the arrival of a single letter...",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Kiedy gaśnie światło przewodnie czyjegoś życia, potrzeba niezwykłej siły ducha, aby wydostać się z czarnych otchłani rozpaczy. Ci, którzy pragną odporności, mogą jeszcze zostać przyciągnięci przez pomocną dłoń przyjaciela, ale co się dzieje z dziewczyną o złamanym sercu, która nie ma ani siły, ani pomocy, by przezwyciężyć ciemność, która grozi jej pochłonięciem? Odpowiedź zostanie ujawniona w tragicznej opowieści, która zaczyna się wraz z nadejściem jednej litery...",
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138c291f3d31e4e20c32d21"
@@ -307,11 +246,8 @@
   "Icon": "/i/061000/061801.png",
   "Level": 50,
   "Name": "the Stone Vigil (Hard)",
-  "Description": "Too long has the Stone Vigil been ravished by the Dravanians and their thralls; too long has House Durendaire suffered this infamy. Time has come for its dragoons to retake the fortress, ten hundred lances and a thousand dreams of vengeance strong.\\n\\n\\n\\nThough the knights of Ishgard breach the gate to find a lodgment within the Vigil, the enemy is well defended and amply supplied. This deadlock must be broken─and who better than those who once made free of the fortress under the dragons' very noses, and lived to tell the tale?",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Zbyt długo Kamienne Czuwanie było niszczone przez Dravanian i ich niewolników; zbyt długo Dom Durendaire cierpiał z powodu tej hańby. Nadszedł czas, by jego smoki odbiły fortecę, dziesięćset włóczni i tysiąc silnych marzeń o zemście. Chociaż rycerze Ishgard przełamują bramę, aby znaleźć kryjówkę wewnątrz Czuwania, wróg jest dobrze broniony i dobrze zaopatrzony. Ten impas musi zostać przełamany – a kto jest lepszy niż ci, którzy kiedyś uwolnili się z fortecy pod samymi nosami smoków i przeżyli, by o tym opowiedzieć?",
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138c2b9f3d31e4e20c32d23"
@@ -320,11 +256,8 @@
   "Icon": "/i/061000/061801.png",
   "Level": 50,
   "Name": "Snowcloak",
-  "Description": "Formed in the aftermath of the Calamity, the great ice wall has long been thought an impenetrable barrier between central and western Coerthas. In truth, however, the wall is riddled with hidden tunnels, which Iceheart and her followers have used as a base of operations. You have been tasked with exploring one such tunnel in the hopes that it will lead you to the heretics' leader─yet what dangers await are anyone's guess...",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Utworzona w następstwie Katastrofy wielka lodowa ściana od dawna była uważana za nieprzeniknioną barierę między centralnym a zachodnim Coerthas. W rzeczywistości jednak ściana jest podziurawiona ukrytymi tunelami, które Iceheart i jej zwolennicy używali jako bazy operacyjnej. Otrzymałeś zadanie zbadania jednego z takich tuneli w nadziei, że zaprowadzi cię on do przywódcy heretyków, jednak niebezpieczeństwa czyhają na każdego...",
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138c2fef3d31e4e20c32d25"
@@ -333,11 +266,8 @@
   "Icon": "/i/061000/061801.png",
   "Level": 50,
   "Name": "Sastasha (Hard)",
-  "Description": "Tucked deep inside the dank caverns of the Sastasha Seagrot, there is a secret port said to have been built by the pirate Mistbeard. In the years following the Calamity, the notorious Serpent Reavers claimed it as their lair, until the cutthroats were vanquished by a band of dauntless adventurers. The place subsequently came under the control of Lominsan authorities, who maintained a security presence within.<br/><br/>Alas, that control did not last, for an unknown faction has arisen─seemingly from the briny depths─and overwhelmed the occupying Yellowjackets. Opinion is divided over the identity of these foes. Some say that they are pirates, while others swear that they are fiends. Yet it does not take a scholar to see that these two things need not be mutually exclusive.",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Głęboko w wilgotnych jaskiniach Sastasha Seagrot znajduje się tajny port, który podobno został zbudowany przez pirata Mistbearda. W latach po nieszczęściu słynni Serpent Reavers uznali je za swoje legowisko, dopóki rzezimieszki nie zostały pokonane przez grupę nieustraszonych poszukiwaczy przygód. Miejsce to znalazło się następnie pod kontrolą władz Lominsan, które utrzymywały wewnątrz ochronę. Niestety, ta kontrola nie trwała długo, ponieważ nieznana frakcja wyłoniła się – pozornie z słonych głębin – i pokonała okupujących Yellowjackets. W sprawie tożsamości tych wrogów zdania są podzielone. Jedni mówią, że są piratami, inni przysięgają, że są diabłami. Nie trzeba jednak uczonego dostrzec, że te dwie rzeczy nie muszą się wzajemnie wykluczać.",
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138c35af3d31e4e20c32d27"
@@ -346,11 +276,8 @@
   "Icon": "/i/061000/061801.png",
   "Level": 50,
   "Name": "the Sunken Temple of Qarn (Hard)",
-  "Description": "Adventurers fear not danger, scholars care not for comfort, and miners like not unturned stones. Thus was born the unlikely partnership between the Order of Nald'thal and Amajina & Sons Mineral Concern, in the wake of a certain adventurer's conquest of the Sunken Temple's notorious traps. But the dead of Qarn left many snares─more than enough for a thousand years of greed─and now, a tomb raider's fevered dream of riches has stranded the joint expedition in a place where history has a tendency to come alive...",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Poszukiwacze przygód nie boją się niebezpieczeństwa, uczeni nie dbają o wygodę, a górnicy lubią nieobrócone kamienie. W ten sposób narodziło się nieprawdopodobne partnerstwo pomiędzy Zakonem Nald'thal a Koncernem Mineralnym Amajina & Sons, w następstwie podboju przez pewnego poszukiwacza przygód niesławnych pułapek Zatopionej Świątyni. Ale zmarli z Qarn pozostawili wiele sideł — aż nadto wystarczających na tysiąc lat chciwości — a teraz gorączkowe marzenie łowcy grobowców o bogactwie utkwiło wspólną ekspedycję w miejscu, w którym historia ma tendencję do ożywania…",
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138c37ef3d31e4e20c32d29"
@@ -359,11 +286,8 @@
   "Icon": "/i/061000/061801.png",
   "Level": 50,
   "Name": "the Keeper of the Lake",
-  "Description": "Fifteen years ago, in the skies above Silvertear Falls, the invading forces of the XIVth Legion were set upon by a host of dragons. Leading the charge was Midgardsormr, legendary king of kings, who engaged the Garlean flagship, the Agrius, in battle. In the end, both Midgardsormr and his foe fell to the earth, and their tangled remnants stand as a memorial to that day─a ruined airship, and the charred corpse of the wyrm lord who brought it low, forever devoid of life...",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Piętnaście lat temu, na niebie nad Wodospadami Silvertear, siły inwazyjne XIV legionu zostały zaatakowane przez zastępy smoków. Dowodził nim Midgardsormr, legendarny król królów, który walczył z okrętem flagowym Garleana, Agriusem. W końcu zarówno Midgardsormr, jak i jego wróg upadli na ziemię, a ich splątane szczątki stanowią pamiątkę po tamtym dniu – zniszczony statek powietrzny i zwęglone zwłoki żmijowego władcy, który sprowadził go nisko, na zawsze pozbawiony życia...",
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138c3a4f3d31e4e20c32d2b"
@@ -372,11 +296,8 @@
   "Icon": "/i/061000/061801.png",
   "Level": 50,
   "Name": "the Wanderer's Palace (Hard)",
-  "Description": "Bound no more by the rancor of their fallen king, the tonberries have regained their senses─with a little help from devoted friends. Yet all thoughts of peace have been put to the blade, as a band of Mamool Ja mercenaries known as the Silverscales have stormed the walls and seized the place for their own. Someone must stop the sellswords from turning the Wanderer's Palace into an unassailable fortress, and take a stand against tonberry slaughter and slavery!",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Nie związani już urazą upadłego króla, tonberry odzyskały zmysły – z niewielką pomocą oddanych przyjaciół. Jednak wszystkie myśli o pokoju zostały skierowane na ostrze, gdy banda najemników Mamool Ja, znana jako Srebrne Łuski, szturmowała mury i zajęła to miejsce dla siebie. Ktoś musi powstrzymać najemników przed przekształceniem Pałacu Wędrowców w fortecę nie do zdobycia i przeciwstawić się rzezi toberry i niewolnictwu!",
+  "TypeDungeon": "Dungeon"
 },{
   "_id": {
     "$oid": "6138c3d2f3d31e4e20c32d2d"
@@ -385,9 +306,6 @@
   "Icon": "/i/061000/061801.png",
   "Level": 50,
   "Name": "Amdapor Keep (Hard)",
-  "Description": "Though purging the Lambs of Dalamud brought a hard-earned peace unto Amdapor Keep, some mysterious fiend has completed the cultists' rites and ushered shadows back into the ruins. Voidsent now revel anew within these walls, their wickedness warping the flora and transforming kindly woodland creatures to bloodthirsty beasts. For the sake of the Twelveswood and the elementals who keep watch over it, you must cleanse the evil from the keep, and sweep away all traces of the cultists.",
-  "DPS": 2,
-  "Healers": 1,
-  "Tanks": 1,
-  "__v": 0
+  "Description": "Chociaż oczyszczenie owiec z Dalamud przyniosło ciężko zapracowany pokój w Amdapor Keep, jakiś tajemniczy diabeł dokończył rytuały kultystów i wprowadził cienie z powrotem do ruin. Pustki teraz na nowo hulają w tych murach, ich niegodziwość wypacza florę i przekształca łagodne leśne stworzenia w krwiożercze bestie. W trosce o Las Dwunastu i czuwające nad nim żywiołaki musisz oczyścić twierdzę ze zła i zmieść wszelkie ślady kultystów.",
+  "TypeDungeon": "Dungeon"
 }]
