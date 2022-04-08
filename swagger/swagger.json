@@ -1,3 +1,4 @@
+
 {
     "swagger": "2.0",
     "info": 
@@ -331,6 +332,31 @@
           }
         }
       },
+      "/classes":{
+        "post":{
+          "description":"Add new class",
+          "tags":["Class"],
+          "security": [{ "Bearer": [] }],
+          "parameters":[{
+            "in":"body",
+            "name":"body",
+            "description":"class",
+            "required":true,
+            "schema":{
+              "$ref":"#/definitions/Class"
+            }
+          }],
+          "responses":
+          {
+            "200":{
+              "description": "Success"
+            },
+            "404":{
+            "description": "not found"
+            }
+          }
+        }
+      },
       "/classes/skills":{
         "get":{
           "description":"Get classs skill by name",
@@ -356,6 +382,27 @@
         }
       },
       "/classes/skill":{
+        "get":{
+          "description":"Get skill",
+          "tags":["Class"],
+          "parameters":[{
+            "in":"query",
+            "name":"id",
+            "description": "id",
+             "schema":
+              {
+                "type": "string"
+              }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        },
         "post":{
           "description":"Get classs skill by name",
           "tags":["Class"],
@@ -502,6 +549,15 @@
         "get":{
           "description":"Get all",
           "tags":["Dungeons"],
+          "parameters":[{
+            "in":"query",
+            "name":"id",
+            "description": "id",
+             "schema":
+              {
+                "type": "string"
+              }
+          }],
           "responses":{
             "200":{
               "description":"Success"
@@ -632,6 +688,29 @@
               "$ref":"#/definitions/HistoryPatch"
             }
           }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/history/{id}":{
+        "get":{
+          "description":"Get by id",
+          "tags":["History"],
+          "parameters":[{
+            "name":"id",
+              "in":"path",
+              "desciption":"ID",
+              "required":true,
+              "schema":{
+                "type":"string"
+              }
+            }],
           "responses":{
             "200":{
               "description":"Success"
@@ -802,7 +881,57 @@
           }
         }
       },
+      "/admin/promote":{
+        "put":{
+          "description":"Promote user to Admin",
+          "tags":["Admin"],
+          "security": [{ "Bearer": [] }],
+          "parameters":[{
+            "in":"body",
+            "name":"email",
+            "description":"email",
+            "schema":{
+              "type":"object",
+              "properties":{
+                "email":{
+                  "type":"string"
+                }
+              }
+            }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
       "/admin/dungeon":{
+        "put":{
+          "description":"update dungeon",
+          "tags":["Admin"],
+          "security": [{ "Bearer": [] }],
+          "parameters":[{
+            "in":"body",
+            "name":"dungeon",
+            "description":"dungeon",
+            "schema":{
+              "$ref":"#/definitions/Dungeon"
+            }
+          }],
+          "responses":
+          {
+            "200":{
+              "description": "Success"
+            },
+            "404":{
+            "description": "not found"
+            }
+          }
+        },
         "delete":{
           "description":"Delete dungeon by name",
           "tags":["Admin"],
@@ -831,6 +960,28 @@
         }
       },
       "/admin/histories":{
+        "put":{
+          "description":"update history",
+          "tags":["Admin"],
+          "security": [{ "Bearer": [] }],
+          "parameters":[{
+            "in":"body",
+            "name":"history",
+            "description":"history",
+            "schema":{
+              "$ref":"#/definitions/HistoryPatch"
+            }
+          }],
+          "responses":
+          {
+            "200":{
+              "description": "Success"
+            },
+            "404":{
+            "description": "not found"
+            }
+          }
+        },
         "delete":{
           "description":"Delete histories by name",
           "tags":["Admin"],
@@ -842,7 +993,7 @@
             "schema":{
               "type":"object",
               "properties":{
-                "patch":{
+                "_id":{
                   "type":"string"
                 }
               }
@@ -854,6 +1005,108 @@
             },
             "404":{
               "description":"Not Found"
+            }
+          }
+        }
+      },
+      "/admin/classes":{
+        "put":{
+          "description":"change class",
+          "tags":["Admin"],
+          "security": [{ "Bearer": [] }],
+          "parameters":[{
+            "in":"body",
+            "name":"classe",
+            "description":"classe",
+            "schema":{
+              "$ref":"#/definitions/Class"
+            }
+          }],
+          "responses":
+          {
+            "200":{
+              "description": "Success"
+            },
+            "404":{
+            "description": "not found"
+            }
+          }
+        },
+        "delete":{
+          "description":"change class",
+          "tags":["Admin"],
+          "security": [{ "Bearer": [] }],
+          "parameters":[{
+            "in":"body",
+            "name":"classe",
+            "description":"classe",
+            "schema":{
+              "type":"object",
+              "properties":{
+                "idClass":{
+                  "type":"number" 
+                }
+              }
+            }
+          }],
+          "responses":
+          {
+            "200":{
+              "description": "Success"
+            },
+            "404":{
+            "description": "not found"
+            }
+          }
+        }
+      },
+      "/admin/skill":{
+        "put":{
+          "description":"change skill",
+          "tags":["Admin"],
+          "security": [{ "Bearer": [] }],
+          "parameters":[{
+            "in":"body",
+            "name":"classe",
+            "description":"classe",
+            "schema":{
+              "$ref":"#/definitions/Skill"
+            }
+          }],
+          "responses":
+          {
+            "200":{
+              "description": "Success"
+            },
+            "404":{
+            "description": "not found"
+            }
+          }
+        },
+        "delete":{
+          "description":"delete skill",
+          "tags":["Admin"],
+          "security": [{ "Bearer": [] }],
+          "parameters":[{
+            "in":"body",
+            "name":"classe",
+            "description":"classe",
+            "schema":{
+              "type":"object",
+              "properties":{
+                "idSkill":{
+                  "type":"number" 
+                }
+              }
+            }
+          }],
+          "responses":
+          {
+            "200":{
+              "description": "Success"
+            },
+            "404":{
+            "description": "not found"
             }
           }
         }
@@ -893,6 +1146,9 @@
       "Dungeon":{
         "type":"object",
         "properties":{
+          "_id":{
+            "typ":"string"
+          },
           "Name":{
             "type":"string",
             "required":true
@@ -969,9 +1225,21 @@
           }
         }
       },
+      "Class":{
+        "type":"object",
+        "properties":{
+          "Name":{"type":"string"},
+          "Part":{"type":"string"},
+          "Disciplies":{"type":"string"},
+          "type":{"type":"string"},
+          "url":{"type":"string"},
+          "idClass":{"type":"number"}
+        }
+      },
       "HistoryPatch":{
         "type":"object",
         "properties":{
+          "_id":{"type":"string"},
           "Patch":{
             "type":"string",
             "required":true

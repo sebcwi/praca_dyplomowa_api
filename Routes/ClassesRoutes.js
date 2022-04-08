@@ -11,4 +11,10 @@ router.get('/skills',ClassController.getClassSkill)
 
 router.post('/skill',auth,ClassController.postNewSkill)
 
+router.get('/skill',ClassController.getSkill)
+
+router.post('/',ClassController.addNewClass)    
+
+
+
 module.exports = router

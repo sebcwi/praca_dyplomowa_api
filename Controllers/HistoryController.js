@@ -1,9 +1,17 @@
 const History = require('../Models/History')
+const ObjectId = require('mongodb').ObjectId; 
 
 const getHistoryAll = (req,res) => {
     switch(req.query.extansion){
         case 'all':{
             History.find().sort({Patch:1}).exec(function(err,historyInfo){
+                if(err) return res.status(404).send(err)
+                res.status(202).send(historyInfo)
+            })
+            break;
+        }
+        case 'extanstions':{
+            History.find().distinct("Extansion").exec(function(err,historyInfo){
                 if(err) return res.status(404).send(err)
                 res.status(202).send(historyInfo)
             })
@@ -34,7 +42,14 @@ const getPatch = (req,res) => {
         res.status(202).send(historyInfo)
     })
 }
+const getByID = (req,res) => {
+    // console.log(req.params)
+    History.find({_id:ObjectId(req.params.id)}).exec(function(err,historyInfo){
+        if(err) return res.status(404).send(err)
+        res.status(202).send(historyInfo)
+    })
+}
 
 module.exports = {
-    getHistoryAll,postHistory,getPatch
+    getHistoryAll,postHistory,getPatch,getByID
 }

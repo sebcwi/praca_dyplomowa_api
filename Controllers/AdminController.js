@@ -1,7 +1,10 @@
-const { ObjectId } = require('mongodb')
+const ObjectId = require('mongodb').ObjectId; 
 const User = require('../Models/User')
 const Dungeon = require('../Models/Dungeons')
 const History = require('../Models/History')
+const Classes = require('../Models/Class')
+const { ObjectID } = require('mongodb');
+const Skills = require('../Models/Skills');
 
 const getUsers = (req,res) =>{
     User.find().exec(function (err, useinfo) {
@@ -19,6 +22,13 @@ const deleteUser = (req,res) => {
 
 }
 
+const promoteUserToAdmin = (req,res) => {
+    User.updateOne({email:req.body.email},{role:'Admin'}).exec((err,userInfo)=>{
+        if(err) return res.status(404).send(err)
+        res.status(202).send(userInfo)
+    })
+}
+
 const deleteDungeons = (req,res) => {
 
     Dungeon.deleteOne({Name:req.body.name}).exec((err,dungInfo)=>{
@@ -33,6 +43,49 @@ const deleteHistories = (req,res) => {
     })
 }
 
+const deleteClass = (req,res) => {
+    Classes.deleteOne({idClass:req.body.idClass}).exec((err,classInfo)=>{
+        if(err) return res.status(404).send(err)
+        res.status(202).send(classInfo)
+    })
+}
+
+const updateDungeons = (req,res) => {
+
+    Dungeon.updateOne({_id:ObjectId(req.body._id)},req.body).exec((err,dungInfo)=>{
+        if(err) return res.status(404).send(err)
+        res.status(202).send(dungInfo)
+    })
+}
+
+const updateHistories = (req,res) => {
+    History.updateOne({_id:ObjectId(req.body._id)},req.body).exec((err,historyInfo)=>{
+        if(err) return res.status(404).send(err)
+        res.status(202).send(historyInfo)
+    })
+}
+
+const updateClass = (req,res) => {
+    Classes.updateOne({idClass:req.body.idClass},req.body).exec((err,classInfo)=>{
+        if(err) return res.status(404).send(err)
+        res.status(202).send(classInfo)
+    })
+}
+
+const deleteSkill = (req,res) => {
+
+    Skills.deleteOne({idSkill:req.body.idSkill}).exec((err,skillInfo)=>{
+        if(err) return res.status(404).send(err)
+        res.status(202).send(skillInfo)
+    })
+}
+const updateSkill = (req,res) => {
+    Skills.updateOne({idSkill:req.body.idSkill},req.body).exec((err,skillInfo)=>{
+        if(err) return res.status(404).send(err)
+        res.status(202).send(skillInfo)
+    })
+}
+
 module.exports = {
-    getUsers,deleteUser,deleteDungeons,deleteHistories
+    getUsers,deleteUser,deleteDungeons,deleteHistories,promoteUserToAdmin,deleteClass,updateDungeons,updateHistories,updateClass,deleteSkill,updateSkill
 }

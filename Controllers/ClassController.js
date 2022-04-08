@@ -60,6 +60,22 @@ const postNewSkill = (req,res) => {
       });
 }
 
+const addNewClass = (req,res) => {
+    const classToSave = Classes(req.body)
+    classToSave.save(function (err) {
+        if(err) return res.status(404).send(err)
+        res.status(202).send(classToSave)
+      });
+
+}
+const getSkill = (req,res) => {
+    console.log(req.query.id)
+    Skills.find({idSkill:req.query.id}).exec(function(err,skillInfo){
+        if(err) return res.status(404).send(err)
+        res.status(202).send(skillInfo)
+    })
+}
+
 module.exports = {
-    getAllClassesByPart,getClassesByName,getClassSkill,postNewSkill
+    getAllClassesByPart,getClassesByName,getClassSkill,postNewSkill,addNewClass,getSkill
 }

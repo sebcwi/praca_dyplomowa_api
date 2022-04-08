@@ -1,5 +1,6 @@
 const Dungeon = require('../Models/Dungeons')
 const DungeonTypes = require('../Models/DungeonsType')
+const ObjectId = require('mongodb').ObjectId; 
 
 const getDungeons = (req,res) => {
     const id = req.params.id
@@ -14,11 +15,23 @@ const getDungeons = (req,res) => {
 
 const getAllDungeons = (req,res) => {
     
+    
+    if(req.query.id)
+    {
+        Dungeon.find({_id:ObjectId(req.query.id)}).sort({Level:1}).exec(function(err,dungeonInfo){
+            if(err) return res.status(404).send(err)
+            res.status(202).send(dungeonInfo)
+        })
+    }
+    else
+    {
+        Dungeon.find().sort({Level:1}).exec(function(err,dungeonInfo){
+            if(err) return res.status(404).send(err)
+            res.status(202).send(dungeonInfo)
+        })
+    }
     // https://xivapi.com/InstanceContent/13?columns=Name,Description,Icon,Banner,ContentFinderCondition.ClassJobLevelRequired,ContentFinderCondition.ContentMemberType
-    Dungeon.find().sort({Level:1}).exec(function(err,dungeonInfo){
-        if(err) return res.status(404).send(err)
-        res.status(202).send(dungeonInfo)
-    })
+    
 }
 
 const postDungeons = (req,res)=>{

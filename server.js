@@ -48,3 +48,5 @@ app.use('/admin',AdminRoutes)
 app.listen(PORT, () => {
     console.log(`Example app listening at http://localhost:${PORT} and swagger: http://localhost:${PORT}/api-docs`)
   })
+
+//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjI0NTVmMDhmMDUxZDAxNmQ4NzZmOTY0IiwiZW1haWwiOiJnZ0BnZy5wbCIsInVzZXJuYW1lIjoiZ29tYWthc2hpMTEiLCJpYXQiOjE2NDk0MTE1MjcsImV4cCI6MTY0OTQxODcyN30.-3DQ4yLf7cEzh4cAC_WxmBgnQ3tpnkH57b2xZHI5ZbY
