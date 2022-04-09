@@ -36,7 +36,7 @@ const getClassSkill = (req,res) => {
     switch(JobName)
     {
         case 'all':{
-            Skills.find().sort({Level:1}).exec(function(err,skillInfo){
+            Skills.find().sort({idSkill:1}).exec(function(err,skillInfo){
                 if(err) return res.status(404).send(err)
                 res.status(202).send(skillInfo)
             })
