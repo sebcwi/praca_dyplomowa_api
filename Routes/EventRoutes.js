@@ -5,5 +5,6 @@ const auth = require('../middleware/auth')
 
 router.post('/',auth,EventController.postEvent)
 router.get('/',EventController.getAllEvents)
+router.get('/:id',EventController.getById)
 
 module.exports = router

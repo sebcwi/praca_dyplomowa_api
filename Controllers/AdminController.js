@@ -5,6 +5,8 @@ const History = require('../Models/History')
 const Classes = require('../Models/Class')
 const { ObjectID } = require('mongodb');
 const Skills = require('../Models/Skills');
+const Event = require('../Models/Event')
+const Tutorial = require('../Models/Tutorial')
 
 const getUsers = (req,res) =>{
     User.find().exec(function (err, useinfo) {
@@ -86,6 +88,26 @@ const updateSkill = (req,res) => {
     })
 }
 
+const deleteEvents = (req,res) => {
+    Event.deleteOne({_id:ObjectId(req.body._id)}).exec((err,eventInfo)=>{
+        if(err) return res.status(404).send(err)
+        res.status(202).send(eventInfo)
+    })
+}
+
+const updateEvent = (req,res) => {
+    Event.updateOne({_id:ObjectId(req.body._id)},req.body).exec((err,eventInfo)=>{
+        if(err) return res.status(404).send(err)
+        res.status(202).send(eventInfo)
+    })
+}
+const updateTutorial = (req,res) => {
+    Tutorial.updateOne({_id:ObjectId(req.body._id)},req.body).exec((err,tutorialInfo)=>{
+        if(err) return res.status(404).send(err)
+        res.status(202).send(tutorialInfo)
+    })
+}
+
 module.exports = {
-    getUsers,deleteUser,deleteDungeons,deleteHistories,promoteUserToAdmin,deleteClass,updateDungeons,updateHistories,updateClass,deleteSkill,updateSkill
+    getUsers,deleteUser,deleteDungeons,deleteHistories,promoteUserToAdmin,deleteClass,updateDungeons,updateHistories,updateClass,deleteSkill,updateSkill,deleteEvents,updateEvent,updateTutorial
 }

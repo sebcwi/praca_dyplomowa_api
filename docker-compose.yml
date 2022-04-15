@@ -1,0 +1,25 @@
+version: '3'
+services:
+  app:
+    container_name: praca_dyplomowa_api_mongo
+    restart: always
+    build: .
+    ports:
+     - "8000:8000"
+    volumes:
+      - ./:/app
+      - /app/node_modules # anonymous volume for node_modules only
+    environment:
+      - PORT=8000
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - '27017:27017'
+    volumes:
+      - ./mongo-volume:/data/db
+
+volumes:
+  data:
+
+    

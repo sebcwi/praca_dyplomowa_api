@@ -1,3 +1,4 @@
+const { ObjectId } = require('mongodb');
 const Event = require('../Models/Event')
 
 const postEvent = (req,res) => {
@@ -8,6 +9,14 @@ const postEvent = (req,res) => {
         res.status(202).send(eventToSave)
       });
 }
+
+const getById = (req,res) => {
+    Event.find({_id:ObjectId(req.params.id)}).exec(function(err,eventInfo){
+        if(err) return res.status(404).send(err)
+        res.status(202).send(eventInfo)
+    })
+}
+
 const getAllEvents = (req,res) => {
     const part = req.query.part
     
@@ -32,5 +41,5 @@ const getAllEvents = (req,res) => {
 
 
 module.exports = {
-    postEvent,getAllEvents
+    postEvent,getAllEvents,getById
 }

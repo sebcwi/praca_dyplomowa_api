@@ -4,7 +4,7 @@
     "info": 
     {
       "title": "Praca Dyplomowa API",
-      "description": "Moja api do pracy dyplomowej o FFXIV",
+      "description": "Pracy dyplomowej o FFXIV",
       "version": "1.0.0",
       "contact": 
       {
@@ -128,7 +128,7 @@
       "/data/servers":{
         "get":{
           "description":"Get all servers",
-          "tags":["Data"],
+          "tags":["Data FFXIV API"],
           "responses":{
             "200":{
               "description":"Success"
@@ -142,7 +142,7 @@
       "/data/datacenters":{
         "get":{
           "description":"Get all datacenterr",
-          "tags":["Data"],
+          "tags":["Data FFXIV API"],
           "responses":{
             "200":{
               "description":"Success"
@@ -156,7 +156,7 @@
       "/data/{name}/page/{id}":{
         "get":{
           "description":"List content by name in ID page",
-          "tags":["Data"],
+          "tags":["Data FFXIV API"],
           "parameters":[
               {
                 "name":"name",
@@ -190,7 +190,7 @@
       "/data/{name}/{id}":{
         "get":{
           "description":"List content by name nad ID",
-          "tags":["Data"],
+          "tags":["Data FFXIV API"],
           "parameters":
           [
             {
@@ -225,7 +225,7 @@
       "/data/content":{
         "get":{
           "description":"Get all content",
-          "tags":["Data"],
+          "tags":["Data FFXIV API"],
           "responses":{
             "200":{
               "description":"Success"
@@ -839,6 +839,29 @@
           }
         }
       },
+      "/events/{id}":{
+        "get":{
+          "description":"Get all events",
+          "tags":["Events"],
+          "parameters":[{
+            "in":"path",
+            "name":"id",
+            "description": "id",
+             "schema":
+              {
+                "type": "string"
+              }
+          }],
+          "responses":{
+            "200":{
+              "description":"Success"
+            },
+            "404":{
+              "description":"Not Found"
+            }
+          }
+        }
+      },
       "/admin/users":{
         "get":{
           "description":"Get all users",
@@ -1110,6 +1133,81 @@
             }
           }
         }
+      },
+      "/admin/event":{
+        "put":{
+          "description":"change event",
+          "tags":["Admin"],
+          "security": [{ "Bearer": [] }],
+          "parameters":[{
+            "in":"body",
+            "name":"event",
+            "description":"event",
+            "schema":{
+              "$ref":"#/definitions/Event"
+            }
+          }],
+          "responses":
+          {
+            "200":{
+              "description": "Success"
+            },
+            "404":{
+            "description": "not found"
+            }
+          }
+        },
+        "delete":{
+          "description":"delete event",
+          "tags":["Admin"],
+          "security": [{ "Bearer": [] }],
+          "parameters":[{
+            "in":"body",
+            "name":"_id",
+            "description":"_id",
+            "schema":{
+              "type":"object",
+              "properties":{
+                "_id":{
+                  "type":"string" 
+                }
+              }
+            }
+          }],
+          "responses":
+          {
+            "200":{
+              "description": "Success"
+            },
+            "404":{
+            "description": "not found"
+            }
+          }
+        }
+      },
+      "/admin/tutorial":{
+        "put":{
+          "description":"change tutorial",
+          "tags":["Admin"],
+          "security": [{ "Bearer": [] }],
+          "parameters":[{
+            "in":"body",
+            "name":"tutorial",
+            "description":"tutorial",
+            "schema":{
+              "$ref":"#/definitions/Tutorial"
+            }
+          }],
+          "responses":
+          {
+            "200":{
+              "description": "Success"
+            },
+            "404":{
+            "description": "not found"
+            }
+          }
+        }
       }
     },
     "definitions":{
@@ -1261,6 +1359,9 @@
       "Event":{
         "type":"object",
         "properties":{
+          "id":{
+            "type":"string"
+          },
           "name":{
             "type":"string",
             "required":true
@@ -1282,6 +1383,9 @@
       "Tutorial":{
         "type":"object",
         "properties":{
+          "_id":{
+            "type":"string"
+          },
           "Class":{
             "type":"string",
             "required":true

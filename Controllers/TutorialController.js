@@ -1,3 +1,4 @@
+const { ObjectId } = require('mongodb')
 const Tutorials = require('../Models/Tutorial')
 
 const getClassTutorials = (req,res) => {
@@ -19,10 +20,23 @@ const getAllClassTutorials = (req,res) => {
 const getClassTutorialsByID = (req,res) => {
     const id = req.params.id
     const classTutorial = req.query.class
-    Tutorials.find({ID:id,Class:classTutorial}).exec(function(err,tutorialInfo){
-        if(err) return res.status(404).send(err)
-        res.status(202).send(tutorialInfo)
-    })
+
+    if(classTutorial == 'all')
+    {
+        Tutorials.find({_id:ObjectId(id)}).exec(function(err,tutorialInfo){
+            if(err) return res.status(404).send(err)
+            res.status(202).send(tutorialInfo)
+        })
+    }
+    else
+    {
+        Tutorials.find({ID:id,Class:classTutorial}).exec(function(err,tutorialInfo){
+            if(err) return res.status(404).send(err)
+            res.status(202).send(tutorialInfo)
+        })
+        
+    }
+    
 }
 
 const postNewTutorail = (req,res) => {

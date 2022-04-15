@@ -19,4 +19,9 @@ router.put('/classes',auth,AdminController.updateClass)
 router.delete('/skill',auth,AdminController.deleteSkill)
 router.put('/skill',auth,AdminController.updateSkill)
 
+router.delete('/event',auth,AdminController.deleteEvents)
+router.put('/event',auth,AdminController.updateEvent)
+
+router.put('/tutorial',auth,AdminController.updateTutorial)
+
 module.exports = router
