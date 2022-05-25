@@ -4,7 +4,7 @@ const HistoryController = require('../Controllers/HistoryController')
 const auth = require('../middleware/auth')
 
 router.get('/',HistoryController.getHistoryAll)
-router.get('/:id',HistoryController.getByID)
+// router.get('/:id',HistoryController.getByID)
 router.post('/',auth,HistoryController.postHistory)
 router.get('/:name',HistoryController.getPatch)
 

@@ -22,7 +22,7 @@
     "paths":{
       "/health/ping":{
         "get":{
-          "description":"Check if server is working",
+          "description":"który sprawdza czy back-end funkcjonuje poprawnie",
           "tags":["Health"],
           "responses":
           {
@@ -37,7 +37,7 @@
       },
       "/user/login":{
         "post":{
-          "description":"Change password",
+          "description":"Logowanie",
           "tags":["User"],
           "parameters":[{
                 "in":"body",
@@ -62,7 +62,7 @@
       },
       "/user/register":{
         "post":{
-          "description":"Register user info",
+          "description":"Rejestrowanie sie",
           "tags":["User"],
           "parameters":[{
             "in":"body",
@@ -85,7 +85,7 @@
       },
       "/user/info":{
         "get":{
-          "description": "Get user info by name",
+          "description": "Uzyskaj informacje o uzytkowniku",
           "tags": ["User"],
           "security": [{ "Bearer": [] }],
           "responses":
@@ -238,7 +238,7 @@
       }, 
       "/user/changePassword":{
         "put":{
-          "description":"Change password",
+          "description":"Zmiana hasła",
           "tags":["User"],
           "security": [{ "Bearer": [] }],
           "parameters":[
